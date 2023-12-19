@@ -8,6 +8,7 @@ import {
 } from "@nextui-org/navbar";
 
 import { Link } from "gatsby";
+import { Squash as Hamburger } from "hamburger-react";
 
 const NavbarMaker = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -20,12 +21,17 @@ const NavbarMaker = () => {
   ];
 
   return (
-    <Navbar isBordered onMenuOpenChange={setIsMenuOpen} className="bg-gray-800" height='3rem'>
+    <Navbar
+      isBordered
+      onMenuOpenChange={setIsMenuOpen}
+      className="bg-gray-800"
+      height="3rem"
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           class="sm:hidden text-white"
-          icon={isMenuOpen ? "close" : "links"}
+          icon={<Hamburger />}
         />
       </NavbarContent>
 
@@ -43,7 +49,7 @@ const NavbarMaker = () => {
         ))}
       </NavbarContent>
 
-      <NavbarMenu style={{backgroundColor: "#111827"}}>
+      <NavbarMenu style={{ backgroundColor: "#111827" }}>
         {pages.map((page) => (
           <NavbarItem>
             <Link
