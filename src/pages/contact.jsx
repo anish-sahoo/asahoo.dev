@@ -4,7 +4,7 @@ import Layout from "./layout";
 const Contact = () => {
   return (
     <Layout>
-      <h1>Contact</h1>
+        <p>Need a developer? <a href="mailto:sahoo.an@northeastern.edu" class="text-blue-300 font-bold">Contact me.</a></p>
     </Layout>
   );
 };

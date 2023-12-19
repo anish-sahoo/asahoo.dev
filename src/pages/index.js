@@ -3,14 +3,12 @@ import Layout from "./layout"
 
 const IndexPage = () => {
   return (
-    <main>
       <Layout>
-        <title>Anish's Portfolio</title>
-        <h1>Anish's Portfolio</h1>
-        <p>Welcome to my portfolio!</p>
-      </Layout>
-
-    </main>
+        <div class="">
+          <h1>Hello.</h1>
+          <h2>I'm Anish, a developer attending college in beautiful San Francisco.</h2>
+        </div>
+      </Layout> 
   )
 }
 
