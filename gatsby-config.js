@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `My Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://asahoo.dev`
   },
   plugins: ["gatsby-plugin-postcss", "gatsby-plugin-mdx", {
     resolve: 'gatsby-source-filesystem',
