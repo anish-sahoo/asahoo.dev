@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Nav = ({linkTo, label}) => {
     return (
-        <li class="text-blue-600 hover:text-blue-400 px-3">
+        <li class="text-blue-400 hover:text-blue-200 text-lg px-3">
             <Link to={linkTo}>{label}</Link>
         </li>
     )

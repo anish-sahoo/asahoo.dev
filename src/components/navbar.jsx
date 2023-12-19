@@ -4,8 +4,9 @@ import Nav from "./nav";
 const Navbar = () => {
   const pages = [
     ["Home", "/"],
-    ["Contact", "/contact"],
-    ["Projects", "/projects"]
+    ["Projects", "/projects"],
+    ["About Me", "/about"],
+    ["Contact", "/contact"]
   ];
 
   return (
