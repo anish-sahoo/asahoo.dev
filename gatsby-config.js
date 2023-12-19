@@ -4,14 +4,18 @@
 module.exports = {
   siteMetadata: {
     title: `My Portfolio`,
-    siteUrl: `https://asahoo.dev`
+    siteUrl: `https://asahoo.dev`,
   },
-  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-mdx", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+  plugins: [
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
     },
-    __key: "pages"
-  }]
+  ],
 };

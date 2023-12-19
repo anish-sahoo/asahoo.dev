@@ -6,14 +6,16 @@ const Navbar = () => {
     ["Home", "/"],
     ["Projects", "/projects"],
     ["About Me", "/about"],
-    ["Contact", "/contact"]
+    ["Contact", "/contact"],
   ];
 
   return (
     <nav>
-      <ul class="flex flex-row">{pages.map((page) => (
-        <Nav linkTo={page[1]} label={page[0]}/>
-      ))}</ul>
+      <ul class="flex flex-row">
+        {pages.map((page) => (
+          <Nav linkTo={page[1]} label={page[0]} />
+        ))}
+      </ul>
     </nav>
   );
 };
