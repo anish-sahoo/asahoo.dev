@@ -1,9 +1,15 @@
 import * as React from "react"
+import Layout from "./layout"
 
 const IndexPage = () => {
   return (
     <main>
-      <p className="text-3xl">Hello</p>
+      <Layout>
+        <title>Anish's Portfolio</title>
+        <h1>Anish's Portfolio</h1>
+        <p>Welcome to my portfolio!</p>
+      </Layout>
+
     </main>
   )
 }
