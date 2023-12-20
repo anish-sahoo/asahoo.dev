@@ -6,6 +6,7 @@ import {
   NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
+  NavbarBrand,
 } from "@nextui-org/navbar";
 
 import { Link } from "gatsby";
@@ -23,18 +24,26 @@ const NavbarMaker = () => {
 
   return (
     <Navbar
-      isBordered
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-gradient-to-l from-gray-900 via-gray-900 to-gray-800"
+      className="bg-transparent"
       height="3rem"
       maxWidth="full"
+      shouldHideOnScroll
     >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden text-white"
+          className="sm:hidden text-white mr-4"
           icon={<Hamburger />}
         />
+        <NavbarBrand>
+          <Link
+            to="/"
+            className="font-sans text-blue-400 hover:text-blue-300 text-2xl"
+          >
+            asahoo.dev
+          </Link>
+        </NavbarBrand>
       </NavbarContent>
 
       <NavbarMenu style={{ backgroundColor: "#111827" }}>
@@ -53,17 +62,17 @@ const NavbarMaker = () => {
 
       <NavbarContent className="hidden sm:flex gap-12">
         <div className="flex flex-row ml-auto">
-        {pages.map((page) => (
-          <NavbarItem key={page[0]}>
-            <Link
-              to={page[0]}
-              className="font-mono text-blue-400 px-4 text-lg"
-              activeClassName="font-bold text-white"
-            >
-              {page[1]}
-            </Link>
-          </NavbarItem>
-        ))}
+          {pages.map((page) => (
+            <NavbarItem key={page[0]}>
+              <Link
+                to={page[0]}
+                className="font-mono text-blue-400 px-4 text-lg"
+                activeClassName="font-bold text-white"
+              >
+                {page[1]}
+              </Link>
+            </NavbarItem>
+          ))}
         </div>
       </NavbarContent>
     </Navbar>

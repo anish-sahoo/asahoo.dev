@@ -8,7 +8,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <div className="">
+      <div className="h-full">
         <h1>
           <TypewriterText text="Hello." delay={0} />
         </h1>
@@ -21,6 +21,34 @@ const IndexPage = () => {
         </h2>
         <h2 className="py-10">This website is still being built!</h2>
         <div className="flex flex-col w-60">
+          <Button
+            size="lg"
+            variant="ghost"
+            className="text-gray-200 mx-2 my-1 hover:text-gray-900"
+          >
+            View My Projects
+          </Button>
+          <Button size="lg" className={buttonStyle}>
+            View My Resume
+          </Button>
+          <Button size="lg" className={buttonStyle}>
+            View My Linkedin
+          </Button>
+          <Button size="lg" className={buttonStyle}>
+            View My Github
+          </Button>
+          <Button size="lg" className={buttonStyle}>
+            View My Projects
+          </Button>
+          <Button size="lg" className={buttonStyle}>
+            View My Resume
+          </Button>
+          <Button size="lg" className={buttonStyle}>
+            View My Linkedin
+          </Button>
+          <Button size="lg" className={buttonStyle}>
+            View My Github
+          </Button>
           <Button size="lg" className={buttonStyle}>
             View My Projects
           </Button>
