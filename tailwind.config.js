@@ -9,8 +9,7 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
-    },
+    extend: {},
   },
   plugins: [nextui()],
 };

@@ -54,17 +54,17 @@ const NavbarMaker = () => {
 
       <NavbarContent className="hidden sm:flex gap-12">
         <div className="flex flex-row ml-auto">
-        {pages.map((page) => (
-          <NavbarItem key={page[0]}>
-            <Link
-              to={page[0]}
-              className="font-mono text-blue-400 px-4 text-lg"
-              activeClassName="font-bold text-white"
-            >
-              {page[1]}
-            </Link>
-          </NavbarItem>
-        ))}
+          {pages.map((page) => (
+            <NavbarItem key={page[0]}>
+              <Link
+                to={page[0]}
+                className="font-mono text-blue-400 px-4 text-lg"
+                activeClassName="font-bold text-white"
+              >
+                {page[1]}
+              </Link>
+            </NavbarItem>
+          ))}
         </div>
       </NavbarContent>
     </Navbar>
