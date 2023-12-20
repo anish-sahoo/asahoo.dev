@@ -25,9 +25,10 @@ const NavbarMaker = () => {
     <Navbar
       isBordered
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-gradient-to-l from-gray-900 via-gray-900 to-gray-800"
+      className="bg-transparent"
       height="3rem"
       maxWidth="full"
+      isBlurred={false}
     >
       <NavbarContent>
         <NavbarMenuToggle
