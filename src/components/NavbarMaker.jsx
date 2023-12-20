@@ -16,7 +16,6 @@ const NavbarMaker = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pages = [
     ["/", "Home"],
-    ["/about", "About Me"],
     ["/projects", "Projects"],
     ["/resume", "Resume"],
     ["/contact", "Contact"],

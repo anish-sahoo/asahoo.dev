@@ -40,27 +40,6 @@ const IndexPage = () => {
           <Button size="lg" className={buttonStyle}>
             View My Projects
           </Button>
-          <Button size="lg" className={buttonStyle}>
-            View My Resume
-          </Button>
-          <Button size="lg" className={buttonStyle}>
-            View My Linkedin
-          </Button>
-          <Button size="lg" className={buttonStyle}>
-            View My Github
-          </Button>
-          <Button size="lg" className={buttonStyle}>
-            View My Projects
-          </Button>
-          <Button size="lg" className={buttonStyle}>
-            View My Resume
-          </Button>
-          <Button size="lg" className={buttonStyle}>
-            View My Linkedin
-          </Button>
-          <Button size="lg" className={buttonStyle}>
-            View My Github
-          </Button>
         </div>
       </div>
     </Layout>
