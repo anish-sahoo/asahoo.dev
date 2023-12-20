@@ -4,7 +4,7 @@ import Layout from "./layout";
 const Resume = () => {
   return (
     <Layout>
-      <div class=""></div>
+      <h1>Resume</h1>
     </Layout>
   );
 };

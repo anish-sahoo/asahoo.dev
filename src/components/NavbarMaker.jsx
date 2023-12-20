@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import * as React from "react";
 import {
   Navbar,
@@ -24,20 +25,20 @@ const NavbarMaker = () => {
     <Navbar
       isBordered
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-gray-800"
+      className="bg-gray-900"
       height="3rem"
     >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          class="sm:hidden text-white"
+          className="sm:hidden text-white"
           icon={<Hamburger />}
         />
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-12">
         {pages.map((page) => (
-          <NavbarItem>
+          <NavbarItem key={page[0]}>
             <Link
               to={page[0]}
               className={`font-mono text-blue-400`}
@@ -51,7 +52,7 @@ const NavbarMaker = () => {
 
       <NavbarMenu style={{ backgroundColor: "#111827" }}>
         {pages.map((page) => (
-          <NavbarItem>
+          <NavbarItem key={page[0] + " mobile"}>
             <Link
               to={page[0]}
               className={`font-mono text-blue-400`}

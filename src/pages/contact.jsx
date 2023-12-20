@@ -8,7 +8,7 @@ const Contact = () => {
         Need a developer?{" "}
         <a
           href="mailto:sahoo.an@northeastern.edu"
-          class="text-blue-300 font-bold"
+          className="text-blue-300 font-bold"
         >
           Contact me.
         </a>
