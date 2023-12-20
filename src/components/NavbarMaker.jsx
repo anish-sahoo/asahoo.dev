@@ -6,6 +6,7 @@ import {
   NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
+  NavbarBrand,
 } from "@nextui-org/navbar";
 
 import { Link } from "gatsby";
@@ -23,19 +24,26 @@ const NavbarMaker = () => {
 
   return (
     <Navbar
-      isBordered
       onMenuOpenChange={setIsMenuOpen}
       className="bg-transparent"
       height="3rem"
       maxWidth="full"
-      isBlurred={false}
+      shouldHideOnScroll
     >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden text-white"
+          className="sm:hidden text-white mr-4"
           icon={<Hamburger />}
         />
+        <NavbarBrand>
+          <Link
+            to="/"
+            className="font-sans text-blue-400 hover:text-blue-300 text-2xl"
+          >
+            asahoo.dev
+          </Link>
+        </NavbarBrand>
       </NavbarContent>
 
       <NavbarMenu style={{ backgroundColor: "#111827" }}>

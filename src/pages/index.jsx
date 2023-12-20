@@ -21,7 +21,11 @@ const IndexPage = () => {
         </h2>
         <h2 className="py-10">This website is still being built!</h2>
         <div className="flex flex-col w-60">
-          <Button size="lg" className={buttonStyle}>
+          <Button
+            size="lg"
+            variant="ghost"
+            className="text-gray-200 mx-2 my-1 hover:text-gray-900"
+          >
             View My Projects
           </Button>
           <Button size="lg" className={buttonStyle}>
