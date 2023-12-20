@@ -6,7 +6,7 @@ import { NextUIProvider } from "@nextui-org/system";
 const Layout = ({ children }) => {
   return (
     <NextUIProvider>
-      <div className="h-screen w-screen bg-gradient-to-b from-gray-900 to-slate-800">
+      <div className="h-screen w-screen bg-gradient-to-b from-gray-900 via-gray-900 to-slate-800">
         <NavbarMaker />
         <div className="px-10 py-16 text-xl font-mono text-gray-300">
           {children}

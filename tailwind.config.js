@@ -10,8 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundColor: ["dark"],
-      textColor: ["dark"],
     },
   },
   plugins: [nextui()],

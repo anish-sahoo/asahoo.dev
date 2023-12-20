@@ -25,8 +25,9 @@ const NavbarMaker = () => {
     <Navbar
       isBordered
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-gray-900"
+      className="bg-gradient-to-l from-gray-900 via-gray-900 to-gray-800"
       height="3rem"
+      maxWidth="full"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -34,20 +35,6 @@ const NavbarMaker = () => {
           className="sm:hidden text-white"
           icon={<Hamburger />}
         />
-      </NavbarContent>
-
-      <NavbarContent className="hidden sm:flex gap-12">
-        {pages.map((page) => (
-          <NavbarItem key={page[0]}>
-            <Link
-              to={page[0]}
-              className={`font-mono text-blue-400`}
-              activeClassName="font-bold text-blue-100"
-            >
-              {page[1]}
-            </Link>
-          </NavbarItem>
-        ))}
       </NavbarContent>
 
       <NavbarMenu style={{ backgroundColor: "#111827" }}>
@@ -63,6 +50,22 @@ const NavbarMaker = () => {
           </NavbarItem>
         ))}
       </NavbarMenu>
+
+      <NavbarContent className="hidden sm:flex gap-12">
+        <div className="flex flex-row ml-auto">
+        {pages.map((page) => (
+          <NavbarItem key={page[0]}>
+            <Link
+              to={page[0]}
+              className="font-mono text-blue-400 px-4 text-lg"
+              activeClassName="font-bold text-white"
+            >
+              {page[1]}
+            </Link>
+          </NavbarItem>
+        ))}
+        </div>
+      </NavbarContent>
     </Navbar>
   );
 };
