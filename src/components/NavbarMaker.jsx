@@ -27,7 +27,7 @@ const NavbarMaker = () => {
       className="bg-transparent"
       height="3rem"
       maxWidth="full"
-      shouldHideOnScroll
+      shouldHideOnScroll={false}
     >
       <NavbarContent>
         <NavbarMenuToggle
