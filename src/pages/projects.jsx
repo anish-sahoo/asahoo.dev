@@ -1,22 +1,22 @@
 import * as React from "react";
 import Layout from "./layout";
-import TypewriterText from "../components/TypewriterText";
+
+// var project = {
+//   name: "Expiry Date Reminder",
+//   description: "Project where user can store the expiry date of their products and get a reminder when the expiry date is near.",
+//   badges: [
+//     "Java",
+//     "SQLite",
+//     "Android Studio",
+//   ],
+// };
+
+// var projectS = [project, project, project, project, project]
 
 const Projects = () => {
   return (
     <Layout>
-      <div>
-        <h1>Projects</h1>
-        <h2>
-          <TypewriterText text="Project 1" delay={0} />
-        </h2>
-        <h2>
-          <TypewriterText text="Project 2" delay={1000} speed={5} />
-        </h2>
-        <h2>
-          <TypewriterText text="Project 3" delay={2000} />
-        </h2>
-      </div>
+      <p>Projects</p>
     </Layout>
   );
 };
