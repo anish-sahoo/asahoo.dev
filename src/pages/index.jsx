@@ -8,7 +8,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <div className="h-full">
+      <div className="h-full py-6">
         <h1>
           <TypewriterText text="Hello." delay={0} />
         </h1>

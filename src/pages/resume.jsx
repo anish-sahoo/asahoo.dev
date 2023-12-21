@@ -1,16 +1,75 @@
 import * as React from "react";
 import Layout from "./layout";
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+} from "@nextui-org/react";
 import { Divider } from "@nextui-org/react";
-import { Link } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+
+import tailwindImage from "../images/tailwindcss.svg";
+import gatsbyImage from "../images/gatsby.svg";
+import reactImage from "../images/react.svg";
+import jsImage from "../images/javascript.png";
+
+import BadgeCards from "../components/BadgeCards";
 
 const Resume = () => {
-  const buttonStyle = "bg-blue-800 text-gray-200 mx-2 my-1";
   const cardStyle = "my-6 bg-blue-950";
-  const linkStyle = "text-blue-800 hover:text-blue-900";
-  const cardHeaderStyle = "text-md text-gray-300";
+  const cardHeaderStyle = "text-md text-gray-300 font-mono";
+
+  const languages = [
+    {
+      name: "JavaScript",
+      image: jsImage,
+    },
+    {
+      name: "Python",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+    },
+    {
+      name: "Java",
+      image: "https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg",
+    },
+    {
+      name: "Kotlin",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
+    },
+  ];
+
+  const frameworks = [
+    {
+      name: "React",
+      image: reactImage,
+    },
+    {
+      name: "Gatsby",
+      image: gatsbyImage,
+    },
+    {
+      name: "Tailwind",
+      image: tailwindImage,
+    },
+    {
+      name: "SQLite",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/9/97/Sqlite-square-icon.svg",
+    },
+  ];
+
   return (
     <Layout>
+      <Button
+        variant="flat"
+        className="text-white text-xl font-sans h-14 bg-blue-600"
+      >
+        Download my Resume
+      </Button>
       <Card className={cardStyle} shadow="sm">
         <CardHeader>
           <p className={cardHeaderStyle}>Education</p>
@@ -20,9 +79,6 @@ const Resume = () => {
           <p>BS in Computer Science</p>
           <p>Expected Graduation: April 2027</p>
         </CardBody>
-        <CardFooter>
-          <Divider />
-        </CardFooter>
       </Card>
 
       <Card className={cardStyle} shadow="sm">
@@ -32,9 +88,6 @@ const Resume = () => {
         <CardBody className="text-gray-300">
           <p>Nothing yet</p>
         </CardBody>
-        <CardFooter>
-          <Divider />
-        </CardFooter>
       </Card>
 
       <Card className={cardStyle} shadow="sm">
@@ -42,26 +95,18 @@ const Resume = () => {
           <p className={cardHeaderStyle}>Skills</p>
         </CardHeader>
         <CardBody className="text-gray-300">
+          <Card className="bg-blue-800" shadow="sm">
+            <p className="text-sm text-white font-mono px-4 pt-2">LANGUAGES</p>
+            <Divider />
+            <BadgeCards cards={languages} />
+          </Card>
+
           <Card className="bg-blue-800 my-4" shadow="sm">
-            <CardHeader className={cardHeaderStyle}>
-              <p className={cardHeaderStyle}>Languages</p>
-            </CardHeader>
-            <CardBody className="text-gray-300">
-              <p>Java</p>
-              <p>Python</p>
-              <p>C</p>
-              <p>JavaScript</p>
-              <p>HTML</p>
-              <p>CSS</p>
-            </CardBody>
-            <CardFooter>
-              <Divider />
-            </CardFooter>
+            <p className="text-sm text-white font-mono px-4 pt-2">FRAMEWORKS</p>
+            <Divider />
+            <BadgeCards cards={frameworks} />
           </Card>
         </CardBody>
-        <CardFooter>
-          <Divider />
-        </CardFooter>
       </Card>
     </Layout>
   );
