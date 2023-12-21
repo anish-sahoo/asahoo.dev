@@ -1,14 +1,7 @@
 import * as React from "react";
 import Layout from "./layout";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-} from "@nextui-org/react";
+import { Button, Card, CardBody, CardHeader } from "@nextui-org/react";
 import { Divider } from "@nextui-org/react";
-import { Accordion, AccordionItem } from "@nextui-org/react";
 
 import tailwindImage from "../images/tailwindcss.svg";
 import gatsbyImage from "../images/gatsby.svg";
