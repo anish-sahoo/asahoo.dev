@@ -8,11 +8,11 @@ import { motion } from "framer-motion";
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="h-full py-6 justify-center flex flex-col">
+      <div className="h-full flex flex-col">
         <h1 className="text-6xl md:7xl sm:6xl lg:l8xl mt-20">
           <TypewriterText text="Hello." delay={0} />
         </h1>
-        <h2 className="text-2xl my-2">
+        <h2 className="text-2xl my-4">
           <TypewriterText
             text="I'm Anish Sahoo, a developer attending college in the San Francisco Bay Area."
             delay={800}
@@ -35,8 +35,7 @@ const IndexPage = () => {
           <Link to="/projects">
             <Button
               size="lg"
-              variant="ghost"
-              className="bg-blue-800 text-gray-200 hover:text-gray-900 text-4xl font-mono p-8"
+              className="bg-blue-800 text-gray-200 hover:text-white hover:bg-blue-700 text-4xl p-8"
             >
               My Work
             </Button>
