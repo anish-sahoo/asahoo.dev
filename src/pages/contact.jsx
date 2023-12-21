@@ -23,6 +23,7 @@ const Contact = () => {
             <img
               src={githubLogo}
               className="object-scale-down h-10 w-auto p-2 px-1 pr-4 rounded-lg"
+              alt="GitHub Logo"
             ></img>
           }
         >
@@ -34,6 +35,7 @@ const Contact = () => {
             <img
               src={linkedInLogo}
               className="object-scale-down h-10 w-auto p-2 px-1 rounded-lg bg-white"
+              alt="LinkedIn Logo"
             ></img>
           }
         >

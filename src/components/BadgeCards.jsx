@@ -10,11 +10,15 @@ const BadgeCards = ({ cards }) => {
             className="m-2 flex flex-row items-center bg-gray-800 h-9"
             onClick={() => console.log(card.name)}
           >
-            <img
-              src={card.image}
-              alt={card.name}
-              className="object-scale-down h-9 w-auto py-2 px-1"
-            />
+            {card.image !== "" ? (
+              <img
+                src={card.image}
+                alt={card.name}
+                className="object-scale-down h-9 w-auto py-2 px-1"
+              />
+            ) : (
+              <div></div>
+            )}
             <p className="font-mono text-12 text-white py-2 px-1">
               {card.name}
             </p>

@@ -7,6 +7,11 @@ import tailwindImage from "../images/tailwindcss.svg";
 import gatsbyImage from "../images/gatsby.svg";
 import reactImage from "../images/react.svg";
 import jsImage from "../images/javascript.png";
+import javaImage from "../images/java.svg";
+import pythonImage from "../images/python.svg";
+import kotlinImage from "../images/kotlin.png";
+import sqliteImage from "../images/sqlite.svg";
+import terminalImage from "../images/bash.png";
 
 import northeasternLogo from "../images/NU_RGB_Notched-N_wordmark_RW.png";
 
@@ -19,12 +24,11 @@ const Resume = () => {
   const languages = [
     {
       name: "Java",
-      image: "https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg",
+      image: javaImage,
     },
     {
       name: "Python",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+      image: pythonImage,
     },
     {
       name: "JavaScript",
@@ -32,39 +36,95 @@ const Resume = () => {
     },
     {
       name: "Kotlin",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
+      image: kotlinImage,
     },
   ];
 
   const frameworks = [
     {
-      name: "React",
+      name: "HTML",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    },
+    {
+      name: "CSS",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    },
+    {
+      name: "React.js",
       image: reactImage,
     },
     {
-      name: "Gatsby",
+      name: "Gatsby.js",
       image: gatsbyImage,
     },
     {
-      name: "Tailwind",
+      name: "Tailwind CSS",
       image: tailwindImage,
     },
     {
       name: "SQLite",
+      image: sqliteImage,
+    },
+  ];
+
+  const tools = [
+    {
+      name: "Git",
+      image: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
+    },
+    {
+      name: "GitHub",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/9/97/Sqlite-square-icon.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+    },
+    {
+      name: "Bash Terminal",
+      image: terminalImage,
+    },
+    {
+      name: "Android Studio",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_(2023).svg",
+    },
+    {
+      name: "Visual Studio Code",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
+    },
+    {
+      name: "IntelliJ IDEA",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg",
+    },
+    {
+      name: "Pycharm",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/1/1d/PyCharm_Icon.svg",
+    },
+    {
+      name: "Davinci Resolve",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg",
+    },
+    {
+      name: "Capture One",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/CAPTURE_ONE_LOGO.svg",
     },
   ];
 
   return (
     <Layout>
-      <Button
-        variant="flat"
-        className="text-white text-xl font-sans h-14 bg-blue-600"
-      >
-        Download my Resume
-      </Button>
+      <a href="/Resume_Anish_Sahoo.pdf">
+        <Button
+          variant="flat"
+          className="text-white text-xl font-sans h-14 bg-blue-600"
+        >
+          Download my Resume
+        </Button>
+      </a>
       <Card className={cardStyle} shadow="sm">
         <CardHeader>
           <p className={cardHeaderStyle}>Education</p>
@@ -81,7 +141,7 @@ const Resume = () => {
                 <p className="lg:text-xl md:text-xl sm:text-xl text-sm font-bold">
                   Northeastern University
                 </p>
-                <div className="pt-2 md:text-md sm:text-sm text-xs text-gray-200">
+                <div className="pt-2 md:text-md sm:text-sm text-xs lg:text-lg text-gray-200">
                   <p className="">BS in Computer Science</p>
                   <p className="">
                     Expected Graduation: <b>April 2027</b>{" "}
@@ -97,8 +157,11 @@ const Resume = () => {
         <CardHeader>
           <p className={cardHeaderStyle}>Work Experience</p>
         </CardHeader>
-        <CardBody className="text-gray-300 text-sm">
-          <p>Nothing yet</p>
+        <CardBody>
+          <Card
+            className="text-gray-300 text-sm lg:text-lg bg-blue-800 p-2 mb-1"
+            shadow="sm"
+          ></Card>
         </CardBody>
       </Card>
 
@@ -119,6 +182,12 @@ const Resume = () => {
             </p>
             <Divider />
             <BadgeCards cards={frameworks} />
+          </Card>
+
+          <Card className="bg-blue-800 my-4" shadow="sm">
+            <p className="text-sm text-white font-mono px-4 pt-2">TOOLS</p>
+            <Divider />
+            <BadgeCards cards={tools} />
           </Card>
         </CardBody>
       </Card>
