@@ -67,6 +67,17 @@ const Resume = () => {
       name: "SQLite",
       image: sqliteImage,
     },
+    {
+      name: "Node.js",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    },
+    {
+      name: "Android SDK",
+      image:
+        "",
+    }
+
   ];
 
   const tools = [
