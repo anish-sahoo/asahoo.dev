@@ -8,7 +8,9 @@ const Layout = ({ children }) => {
     <NextUIProvider>
       <div className="h-auto text-gray-300 ">
         <NavbarMaker />
-        <div className="h-auto  px-14 py-4 text-xl font-mono">{children}</div>
+        <div className="h-auto  px-14 lg:px-32 py-4 text-xl font-mono">
+          {children}
+        </div>
       </div>
     </NextUIProvider>
   );
