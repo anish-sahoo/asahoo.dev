@@ -70,7 +70,7 @@ const Resume = () => {
           <p className={cardHeaderStyle}>Education</p>
         </CardHeader>
         <CardBody className="text-gray-300">
-          <Card className="bg-blue-800 text-white mb-2">
+          <Card className="bg-blue-800 text-white mb-2 py-2">
             <div className="flex flex-row items-center gap-4">
               <img
                 src={northeasternLogo}
@@ -78,10 +78,10 @@ const Resume = () => {
                 alt="Northeastern University Logo"
               ></img>
               <div className="flex flex-col">
-                <p className="lg:text-xl md:text-xl sm:text-xl text-md font-bold">
+                <p className="lg:text-xl md:text-xl sm:text-xl text-sm font-bold">
                   Northeastern University
                 </p>
-                <div className="pt-2 md:text-md sm:text-sm text-sm text-gray-200">
+                <div className="pt-2 md:text-md sm:text-sm text-xs text-gray-200">
                   <p className="">BS in Computer Science</p>
                   <p className="">
                     Expected Graduation: <b>April 2027</b>{" "}
