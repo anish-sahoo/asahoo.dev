@@ -1,6 +1,12 @@
 import * as React from "react";
 import Layout from "./layout";
-import { Button, Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+} from "@nextui-org/react";
 import { Divider } from "@nextui-org/react";
 
 import tailwindImage from "../images/tailwindcss.svg";
@@ -74,10 +80,8 @@ const Resume = () => {
     },
     {
       name: "Android SDK",
-      image:
-        "",
-    }
-
+      image: "",
+    },
   ];
 
   const tools = [
@@ -155,12 +159,11 @@ const Resume = () => {
                 <div className="pt-2 md:text-md sm:text-sm text-xs lg:text-lg text-gray-200">
                   <p className="">BS in Computer Science</p>
                   <p className="">
-                    Expected Graduation: <b className="text-white">April 2027</b>{" "}
+                    Expected Graduation:{" "}
+                    <b className="text-white">April 2027</b>{" "}
                   </p>
                 </div>
-
               </div>
-
             </div>
             <CardFooter>
               <div className="w-full">
@@ -169,8 +172,8 @@ const Resume = () => {
                     RELEVANT COURSEWORK:
                     <Divider />
                     <div className="text-md font-bold text-white pt-1">
-                    <p>CS2500 Fundamentals of Computer Science 1</p>
-                    <p>CS1800 Discrete Structures</p> 
+                      <p>CS2500 Fundamentals of Computer Science 1</p>
+                      <p>CS1800 Discrete Structures</p>
                     </div>
                   </p>
                 </Card>

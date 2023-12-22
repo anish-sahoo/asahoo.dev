@@ -10,10 +10,11 @@ const NotFoundPage = () => {
         <h1>Page not found</h1>
         <p>Sorry, we couldn't find what you were looking for.</p>
         <Link to="/">Go home</Link>.
-
         <p>By the way, this is the composition of my GitHub repositories:</p>
-        <img src="https://github-readme-stats-anish-sahoo.vercel.app/api/top-langs/?username=anish-sahoo&theme=react&hide_border=true&count_private=true&include_all_commits=true&langs_count=20&layout=compact&card_width=334" className="shadow-lg">
-        </img>
+        <img
+          src="https://github-readme-stats-anish-sahoo.vercel.app/api/top-langs/?username=anish-sahoo&theme=react&hide_border=true&count_private=true&include_all_commits=true&langs_count=20&layout=compact&card_width=334"
+          className="shadow-lg"
+        ></img>
       </div>
     </Layout>
   );
