@@ -21,7 +21,7 @@ const IndexPage = () => {
         </h2>
         <h2 className="text-xl mt-6 font-sans text-blue-400 italic">
           <TypewriterText
-            text="I'm passionate about building things that help people."
+            text="I'm passionate about building things that help people out."
             delay={5500}
             speed={50}
           />
@@ -35,9 +35,11 @@ const IndexPage = () => {
           <Link to="/projects">
             <Button
               size="lg"
-              className="bg-blue-800 text-gray-200 hover:text-white hover:bg-blue-700 text-4xl p-8"
+              variant="ghost"
+              radius="small"
+              className=" text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
             >
-              My Work
+              View My Work
             </Button>
           </Link>
         </motion.div>

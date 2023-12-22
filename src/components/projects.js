@@ -2,7 +2,7 @@ export var projects = [
 
 {
   name: "Portfolio Website",
-  description: "Project where user can view my portfolio.",
+  description: "This website created to showcase my projects and skills!",
   badges: [
     "Gatsby.js",
     "React.js",
@@ -13,7 +13,7 @@ export var projects = [
 },
 {
   name: "KhouryKTRL VSCode Extension",
-  description: "Developed a VSCode extension that helps CS2500 students save time in the execution and linting of Kotlin code. Used by multiple professors and 100+ students at Northeastern University Oakland.",
+  description: "Extension that helps CS2500 students save time in the execution and linting of Kotlin code. Used by multiple professors and 100+ students at NU Oakland.",
   badges: [
     "JavaScript",
     "VSCode API"
@@ -35,6 +35,19 @@ export var projects = [
   link2: "https://snowjam.asahoo.dev"
 },
 {
+  name: "Library Management System",
+  description: "Web Application with various library management features.",
+  badges: [
+    "React.js",
+    "Tailwind CSS",
+    "Node.js",
+    "Xano",
+    "Netlify"
+  ],
+  link: "https://github.com/anish-sahoo/LibraryManagement",
+  link2: "https://libman.asahoo.dev"
+},
+{
   name: "Expiry Date Reminder",
   description: "Project where user can store the expiry date of their products and get a reminder when the expiry date is near.",
   badges: [
@@ -45,16 +58,13 @@ export var projects = [
   link: "https://github.com/anish-sahoo/ExpiryDateReminder"
 },
 {
-  name: "Library Management System",
-  description: "Project where user can manage the books in the library.",
+  name: "Password Manager",
+  description: "Simple password manager that stores passwords in a SQLite database.",
   badges: [
-    "React.js",
-    "Tailwind CSS",
-    "Node.js",
-    "Xano",
-    "Netlify"
+    "Python",
+    "SQLite"
   ],
-  link: "https://github.com/anish-sahoo/LibraryManagement"
+  link: "https://github.com/anish-sahoo/PasswordManager"
 },
 {
   name: "Wordle Clone",

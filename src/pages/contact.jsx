@@ -7,16 +7,17 @@ import linkedInLogo from "../images/LI-In-Bug.png";
 const Contact = () => {
   return (
     <Layout>
-      <div className="flex flex-col items-center">
-        <p className="my-16">
+      <div className="flex flex-col items-center text-center">
+        <p className="my-16 text-2xl">
           Need a developer?{" "}
           <a
             href="mailto:sahoo.an@northeastern.edu"
-            className="text-blue-300 font-bold"
+            className="text-blue-300 font-bold underline"
           >
             Email me!
           </a>
         </p>
+        <p>You can also find me at:</p>
         <Button
           className="my-2 bg-gray-950 text-white text-sans font-bold text-md h-14 pr-8 w-52"
           startContent={
