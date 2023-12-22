@@ -3,20 +3,26 @@ import { Card, Divider } from "@nextui-org/react";
 import { CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 
 const ProjectCard = ({ project }) => {
-  return <Card>
+  return <Card isBlurred className="h-full w-full">
     <CardHeader className="flex gap-3">
-      <h1 className="text-2xl font-bold">{project.name}</h1>
+      <h1 className="text-2xl font-bold text-blue-500">{project.name}</h1>
     </CardHeader>
-    <Divider />
     <CardBody>
-      <p className="text-lg">{project.description}</p>
+      <p className="text-lg text-white">{project.description}</p>
       <a href="/">
         <p className="text-lg font-bold text-blue-500">View Project</p>
       </a>
     </CardBody>
-    <Divider />
     <CardFooter>
-      <h1 className="text-2xl font-bold">Technologies Used:</h1>
+      <div className="flex flex-wrap">
+        {project.badges.map((badge) => (
+          <div key={badge}>
+            <Card className="bg-slate-800 m-1">
+            <p className="text-lg font-bold text-blue-100 mx-2 my-1">{badge}</p>
+            </Card>
+          </div>
+        ))}
+      </div>
     </CardFooter>
   </Card>
 };
