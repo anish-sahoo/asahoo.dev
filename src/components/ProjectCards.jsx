@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Divider } from "@nextui-org/react";
+import { Card, Divider } from "@nextui-org/react";
 import { CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 
 const ProjectCard = ({ project }) => {

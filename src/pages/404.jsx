@@ -14,6 +14,7 @@ const NotFoundPage = () => {
         <img
           src="https://github-readme-stats-anish-sahoo.vercel.app/api/top-langs/?username=anish-sahoo&theme=react&hide_border=true&count_private=true&include_all_commits=true&langs_count=20&layout=compact&card_width=334"
           className="shadow-lg"
+          alt="GitHub Stats"
         ></img>
       </div>
     </Layout>
