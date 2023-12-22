@@ -10,6 +10,7 @@ var projectS = [{
     "SQLite",
     "Android Studio",
   ],
+  link: "https://github.com/anish-sahoo/ExpiryDateReminder"
 },
 {
   name: "Library Management System",
@@ -20,7 +21,8 @@ var projectS = [{
     "Node.js",
     "Xano",
     "Netlify"
-  ]
+  ],
+  link: "https://github.com/anish-sahoo/LibraryManagement"
 }
 ];
 

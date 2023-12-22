@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "./layout";
-import { Button, Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Button, Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 import { Divider } from "@nextui-org/react";
 
 import tailwindImage from "../images/tailwindcss.svg";
@@ -155,11 +155,27 @@ const Resume = () => {
                 <div className="pt-2 md:text-md sm:text-sm text-xs lg:text-lg text-gray-200">
                   <p className="">BS in Computer Science</p>
                   <p className="">
-                    Expected Graduation: <b>April 2027</b>{" "}
+                    Expected Graduation: <b className="text-white">April 2027</b>{" "}
                   </p>
                 </div>
+
               </div>
+
             </div>
+            <CardFooter>
+              <div className="w-full">
+                <Card className="bg-blue-700 px-2 py-0.5">
+                  <p className="text-sm text-gray-200 font-mono px-4 pt-2">
+                    RELEVANT COURSEWORK:
+                    <Divider />
+                    <div className="text-md font-bold text-white pt-1">
+                    <p>CS2500 Fundamentals of Computer Science 1</p>
+                    <p>CS1800 Discrete Structures</p> 
+                    </div>
+                  </p>
+                </Card>
+              </div>
+            </CardFooter>
           </Card>
         </CardBody>
       </Card>
@@ -187,7 +203,7 @@ const Resume = () => {
             <BadgeCards cards={languages} />
           </Card>
 
-          <Card className="bg-blue-800 my-4" shadow="sm">
+          <Card className="bg-blue-800 mt-4" shadow="sm">
             <p className="text-sm text-white font-mono px-4 pt-2">
               TECHNOLOGIES
             </p>
@@ -195,7 +211,7 @@ const Resume = () => {
             <BadgeCards cards={frameworks} />
           </Card>
 
-          <Card className="bg-blue-800 my-4" shadow="sm">
+          <Card className="bg-blue-800 mt-4" shadow="sm">
             <p className="text-sm text-white font-mono px-4 pt-2">TOOLS</p>
             <Divider />
             <BadgeCards cards={tools} />
