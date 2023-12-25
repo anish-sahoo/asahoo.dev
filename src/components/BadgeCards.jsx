@@ -6,9 +6,7 @@ const BadgeCards = ({ cards }) => {
     <div className="flex flex-row flex-wrap">
       {cards.map((card) => (
         <div className="flex flex-row flex-wrap" key={card.name}>
-          <Button
-            className="m-2 flex flex-row items-center bg-gray-800 h-9"
-          >
+          <Button className="m-2 flex flex-row items-center bg-gray-800 h-9">
             {card.image !== "" ? (
               <img
                 src={card.image}
