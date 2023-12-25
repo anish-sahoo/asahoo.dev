@@ -45,13 +45,13 @@ const NavbarMaker = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarMenu style={{ backgroundColor: "#111827" }}>
+      <NavbarMenu style={{ backgroundColor: "#111827" }} className="my-2">
         {pages.map((page) => (
-          <NavbarItem key={page[0] + " mobile"}>
+          <NavbarItem key={page[0] + " mobile"} className="py-1 px-2">
             <Link
               to={page[0]}
-              className={`font-mono text-blue-400`}
-              activeClassName="font-bold"
+              className={`font-mono text-blue-300 text-3xl`}
+              activeClassName="font-bold text-blue-50"
             >
               {page[1]}
             </Link>
