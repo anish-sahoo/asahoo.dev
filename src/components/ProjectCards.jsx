@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
           {project.link2 ? (
             <a href={project.link2}>
               <p className="text-lg font-bold text-lime-400 underline font-sans px-4">
-                Live Demo
+                Try It Live
               </p>
             </a>
           ) : (
