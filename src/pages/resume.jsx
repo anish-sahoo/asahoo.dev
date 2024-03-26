@@ -191,7 +191,12 @@ const Resume = () => {
           <Card
             className="text-gray-300 text-sm lg:text-lg bg-blue-800 p-2 mb-1"
             shadow="sm"
-          ></Card>
+          >
+            <CardHeader className="text-xl font-bold">
+              Teaching Assistant
+            </CardHeader>
+            <CardBody>Khoury College of Computer Sciences</CardBody>
+          </Card>
         </CardBody>
       </Card>
 

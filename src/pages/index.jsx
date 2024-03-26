@@ -26,23 +26,42 @@ const IndexPage = () => {
             speed={50}
           />
         </h2>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 8.5 }}
-          className="my-10 w-full"
-        >
-          <Link to="/projects">
-            <Button
-              size="lg"
-              variant="ghost"
-              radius="small"
-              className=" text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
-            >
-              View My Work
-            </Button>
-          </Link>
-        </motion.div>
+        <div className="flex md:flex-row flex-col md:mt-2">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 8.5 }}
+            className="mt-10 flex"
+          >
+            <Link to="/projects">
+              <Button
+                size="lg"
+                variant="ghost"
+                radius="small"
+                className=" text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
+              >
+                My Work
+              </Button>
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 9 }}
+            className="mt-4 flex md:mt-10 md:mx-4"
+          >
+            <a href="/Resume_Anish_Sahoo.pdf">
+              <Button
+                size="lg"
+                variant="ghost"
+                radius="small"
+                className=" text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
+              >
+                My Resume
+              </Button>
+            </a>
+          </motion.div>
+        </div>
       </div>
     </Layout>
   );
