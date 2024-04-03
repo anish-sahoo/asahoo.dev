@@ -1,8 +1,9 @@
 export var projects = [
   {
-    name: "PawHacks Website",
+    name: "PawHacks 1.0 Website",
     description: "Website for the PawHacks 1.0 Hackathon at Northeastern University Oakland.",
-    badges: ["React.js", "Tailwind CSS", "Netlify"],
+    badges: ["Handlebars", "Bootstrap CSS", "Caddy Server", "DigitalOcean", "Javascript", "MySQL"],
+    link: "https://pawhacks.io",
   },
   {
     name: "Portfolio Website",
