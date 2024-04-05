@@ -48,6 +48,16 @@ export const technologies = [
     name: "SQLite",
     image: "https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg",
   },
+  {
+    name: "Node.js",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+  },
+  {
+    name: "Express.js",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+  }
 ];
 
 export const tools = [
