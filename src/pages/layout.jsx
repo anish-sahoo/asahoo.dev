@@ -6,7 +6,7 @@ import { NextUIProvider } from "@nextui-org/system";
 const Layout = ({ children }) => {
   return (
     <NextUIProvider>
-      <div className="h-auto text-gray-300">
+      <div className="h-auto text-gray-300 dark">
         <NavbarMaker />
         <div className="h-auto  px-10 lg:px-24 py-4 text-xl font-mono">
           {children}
