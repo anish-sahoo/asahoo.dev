@@ -38,7 +38,7 @@ const IndexPage = () => {
                 size="lg"
                 variant="ghost"
                 radius="small"
-                className=" text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
+                className="light text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
               >
                 My Work
               </Button>
@@ -55,7 +55,7 @@ const IndexPage = () => {
                 size="lg"
                 variant="ghost"
                 radius="small"
-                className=" text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
+                className="light text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
               >
                 My Resume
               </Button>
