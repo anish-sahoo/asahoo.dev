@@ -14,22 +14,3 @@ body {
   width: 100%;
   background-image: linear-gradient(to bottom, rgb(17 24 39), rgb(26, 35, 47));
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-      color-scheme: dark;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-      color-scheme: dark;
-  }
-}
-
-/* Chrome */
-@media (forced-colors: active) {
-  :root {
-      color-scheme: dark;
-  }
-}
