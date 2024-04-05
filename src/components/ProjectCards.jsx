@@ -4,7 +4,7 @@ import { CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card isBlurred className="dark w-full lg:h-full">
+    <Card isBlurred className="bg-blue-800 w-full lg:h-full">
       <CardHeader className="flex gap-3">
         <a href={project.link}>
           <h1 className="text-3xl font-sans font-bold text-blue-500 drop-shadow-lg">
