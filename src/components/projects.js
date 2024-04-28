@@ -1,5 +1,10 @@
 export var projects = [
   {
+    name: "X Developer Challenge Entry",
+    description: "Web application that uses X API and xAI API to form conclusions about current financial trends.",
+    badges: ["TypeScript", "React.js", "Tailwind CSS", "Python", "X API", "xAI API"],
+  },
+  {
     name: "Nearby Prices",
     description: "A simple crowd-sourced price aggregator for small businesses.",
     badges: ["React.js", "Express.js", "Tailwind CSS", "Node.js", "JavaScript", "SQLite"],

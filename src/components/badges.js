@@ -18,6 +18,11 @@ export const languages = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
   },
+  {
+    name: "TypeScript",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+  },
 ];
 
 export const technologies = [
