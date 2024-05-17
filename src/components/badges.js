@@ -23,6 +23,11 @@ export const languages = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
   },
+  {
+    name: "SQL",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+  }
 ];
 
 export const technologies = [
