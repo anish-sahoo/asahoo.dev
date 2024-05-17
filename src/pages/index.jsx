@@ -14,7 +14,7 @@ const IndexPage = () => {
         </h1>
         <h2 className="text-2xl my-4">
           <TypewriterText
-            text="I'm Anish Sahoo, a developer attending college in the San Francisco Bay Area."
+            text="I'm Anish Sahoo, a developer attending Northeastern University in Boston, Massachussets."
             delay={800}
             speed={50}
           />
