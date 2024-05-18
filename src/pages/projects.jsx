@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "./layout";
 import ProjectCards from "../components/ProjectCards";
-import { projects } from "../components/projects";
+import { projects } from "../projects";
 
 const Projects = () => {
   return (
