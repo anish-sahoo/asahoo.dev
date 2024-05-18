@@ -1,5 +1,3 @@
-import tailwindImage from "./images/tailwindcss.svg";
-import gatsbyImage from "./images/gatsby.svg";
 import reactImage from "./images/react.svg";
 import jsImage from "./images/javascript.png";
 import javaImage from "./images/java.svg";
@@ -18,16 +16,18 @@ export const languages = [
     image: pythonImage,
   },
   {
+    name: "Kotlin",
+    image: kotlinImage,
+  },
+  {
     name: "JavaScript",
     image: jsImage,
   },
   {
-    name: "Kotlin",
-    image: kotlinImage,
+    name: "TypeScript",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
   },
-];
-
-export const frameworks = [
   {
     name: "HTML",
     image:
@@ -39,20 +39,30 @@ export const frameworks = [
       "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
   },
   {
+    name: "SQL",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+  },
+  {
+    name: "Rust",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg",
+  }
+];
+
+export const frameworks = [
+  {
     name: "React.js",
     image: reactImage,
   },
   {
-    name: "Gatsby.js",
-    image: gatsbyImage,
+    name: "Express.js",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
   },
   {
-    name: "Tailwind CSS",
-    image: tailwindImage,
-  },
-  {
-    name: "SQLite",
-    image: sqliteImage,
+    name: "Flask",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
   },
   {
     name: "Node.js",
@@ -61,8 +71,35 @@ export const frameworks = [
   },
   {
     name: "Android SDK",
-    image: "",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg",
   },
+  {
+    name: "JUnit 5",
+    image:
+      "https://junit.org/junit5/assets/img/junit5-logo.png",
+  }
+];
+
+export const databases = [
+  {
+    name: "SQLite",
+    image: sqliteImage,
+  },
+  {
+    name: "MySQL",
+    image:
+      "",
+  },
+  {
+    name: "MongoDB",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+  },
+  {
+    name: "Redis",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Logo-redis.svg/768px-Logo-redis.svg.png?20210820223643",
+  }
 ];
 
 export const tools = [
@@ -80,6 +117,16 @@ export const tools = [
     image: terminalImage,
   },
   {
+    name: "Linux",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
+  },
+  {
+    name: "Docker",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_%28container_engine%29_logo.png",
+  },
+  {
     name: "Android Studio",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_(2023).svg",
@@ -95,11 +142,6 @@ export const tools = [
       "https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg",
   },
   {
-    name: "Pycharm",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/1d/PyCharm_Icon.svg",
-  },
-  {
     name: "Davinci Resolve",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg",
@@ -109,6 +151,11 @@ export const tools = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/2/27/CAPTURE_ONE_LOGO.svg",
   },
+  {
+    name: "Latex",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/45/LaTeX_project_logo_bird.svg",
+  }
 ];
 
 export const classes = [

@@ -10,7 +10,7 @@ import {
   CardHeader,
 } from "@nextui-org/react";
 import { Divider } from "@nextui-org/react";
-import { classes, jobs, languages, frameworks, tools } from "../resume";
+import { classes, jobs, languages, frameworks, tools, databases } from "../resume";
 
 import northeasternLogo from "../images/NU_RGB_Notched-N_wordmark_RW.png";
 
@@ -35,7 +35,7 @@ const Resume = () => {
           <p className={cardHeaderStyle}>Education</p>
         </CardHeader>
         <CardBody className="text-gray-300">
-          <Card className="bg-blue-800 text-white mb-2 py-2">
+          <Card className="bg-blue-800 text-white mb-2 p-2 lg:p-4">
             <div className="flex flex-row items-center gap-4">
               <img
                 src={northeasternLogo}
@@ -43,10 +43,10 @@ const Resume = () => {
                 alt="Northeastern University Logo"
               ></img>
               <div className="flex flex-col">
-                <p className="lg:text-xl md:text-xl sm:text-xl text-sm font-bold">
+                <p className="lg:text-2xl md:text-xl sm:text-xl text-sm font-bold">
                   Northeastern University
                 </p>
-                <div className="pt-2 md:text-md sm:text-sm text-xs lg:text-lg text-gray-200 pr-1">
+                <div className="pt-2 md:text-md sm:text-sm text-xs lg:text-xl text-gray-200 pr-1">
                   <p className="">BS in Computer Science</p>
                   <p className="">
                     Expected Graduation:{" "}
@@ -105,21 +105,21 @@ const Resume = () => {
           {jobs.map((job, index) => (
             <Card
               key={index}
-              className="text-gray-300 text-sm lg:text-lg bg-blue-800 p-2 mb-1"
+              className="text-gray-300 text-sm lg:text-lg bg-blue-800 p-2 lg:p-4 mb-2 font-sans"
               shadow="sm"
             >
-              <CardHeader className="text-2xl font-bold text-white flex flex-row py-1 px-2 hover:underline">
-                <p className="flex-grow">{job.company}</p>
-                <p className="justify-end">{job.date}</p>
+              <CardHeader className="md:text-2xl text-md font-bold text-white flex flex-row py-1 px-2 hover:underline">
+                <p className="flex-grow text-left">{job.company}</p>
+                <p className="justify-end text-right">{job.date}</p>
               </CardHeader>
-              <CardBody className="">
+              <CardBody className="lg:text-xl">
                 {job.positions.map((position, positionIndex) => (
-                  <div key={positionIndex}>
-                    <div className="text-gray-300 flex flex-row">
-                      <p className="flex-grow italic ml-2">{position.title}</p>
-                      <p className="justify-end hidden">{job.date}</p>
+                  <div key={positionIndex} className={positionIndex > 0 ? "mt-4" : ""}>
+                    <div className="text-gray-300 flex flex-row ">
+                      <p className="flex-grow italic ml-2 text-left md:font-mono">{position.title}</p>
+                      <p className={`justify-end italic text-right ${position.date ? "" : "hidden"}`}>{position.date}</p>
                     </div>
-                    <div className="text-gray-300 bg-blue-900 p-2 rounded-xl">
+                    <div className="text-gray-300 bg-blue-900 md:p-6 p-2 rounded-xl">
                       {position.points.map((point, pointIndex) => (
                         <div key={pointIndex} className="flex flex-row">
                           <p className="mr-2">-</p>
@@ -148,10 +148,18 @@ const Resume = () => {
 
           <Card className="bg-blue-800 mt-4" shadow="sm">
             <p className="text-sm text-white font-mono px-4 pt-2">
-              TECHNOLOGIES
+              FRAMEWORKS
             </p>
             <Divider />
             <BadgeCards cards={frameworks} />
+          </Card>
+
+          <Card className="bg-blue-800 mt-4" shadow="sm">
+            <p className="text-sm text-white font-mono px-4 pt-2">
+              DATABASES
+            </p>
+            <Divider />
+            <BadgeCards cards={databases} />
           </Card>
 
           <Card className="bg-blue-800 mt-4" shadow="sm">
