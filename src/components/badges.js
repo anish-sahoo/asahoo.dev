@@ -27,7 +27,7 @@ export const languages = [
     name: "SQL",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
-  }
+  },
 ];
 
 export const technologies = [
@@ -65,9 +65,8 @@ export const technologies = [
   },
   {
     name: "Express.js",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
-  }
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+  },
 ];
 
 export const tools = [

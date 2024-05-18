@@ -1,6 +1,8 @@
 import * as React from "react";
 import Layout from "./layout";
 import {
+  Accordion,
+  AccordionItem,
   Button,
   Card,
   CardBody,
@@ -167,16 +169,47 @@ const Resume = () => {
             </div>
             <CardFooter>
               <div className="w-full">
-                <Card className="bg-blue-700 px-2 py-0.5">
-                  <p className="text-sm text-gray-200 font-mono px-4 pt-2">
-                    RELEVANT COURSEWORK:
-                    <Divider />
-                    <div className="text-md font-bold text-white pt-1">
-                      <p>CS2500 Fundamentals of Computer Science 1</p>
-                      <p>CS1800 Discrete Structures</p>
-                    </div>
-                  </p>
-                </Card>
+                <Accordion
+                  className="text-gray-200 font-mono rounded-lg hover:bg-blue-900"
+                  isCompact
+                >
+                  <AccordionItem
+                    className="text-lg pl-4 py-2"
+                    title={
+                      <p className="font-bold">
+                        {"Relevant Coursework: (Click to Expand)"}
+                      </p>
+                    }
+                    indicator={<p className="text-white text-xl pr-2">{`<`}</p>}
+                  >
+                    <Card
+                      className=" text-gray-300 p-4 rounded-lg"
+                      shadow="none"
+                    >
+                      <p className="hover:text-gray-400">
+                        CS 1800 Discrete Structures
+                      </p>
+                      <p className="hover:text-gray-400">
+                        CS 2500 Fundamentals of Computer Science 1
+                      </p>
+                      <p className="hover:text-gray-400">
+                        CS 2500 Fundamentals of Computer Science 2
+                      </p>
+                      <p className="hover:text-gray-400">
+                        CS 2810 Mathematics of Data Models
+                      </p>
+                      <p className="hover:text-gray-400">
+                        CS 3200 Database Design
+                      </p>
+                      <p className="hover:text-gray-400">
+                        CS 3500 Object Oriented Design
+                      </p>
+                      <p className="hover:text-gray-400">
+                        CS 3000 Algorithms & Data
+                      </p>
+                    </Card>
+                  </AccordionItem>
+                </Accordion>
               </div>
             </CardFooter>
           </Card>

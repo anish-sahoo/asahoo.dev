@@ -1,20 +1,44 @@
 export var projects = [
   {
     name: "X Developer Challenge Entry",
-    description: "Web application that uses X API and xAI API to form conclusions about current financial trends.",
-    badges: ["TypeScript", "React.js", "Tailwind CSS", "Python", "X API", "xAI API"],
+    description:
+      "Web application that uses X API and xAI API to form conclusions about current financial trends.",
+    badges: [
+      "TypeScript",
+      "React.js",
+      "Tailwind CSS",
+      "Python",
+      "X API",
+      "xAI API",
+    ],
   },
   {
     name: "Nearby Prices",
-    description: "A simple crowd-sourced price aggregator for small businesses.",
-    badges: ["React.js", "Express.js", "Tailwind CSS", "Node.js", "JavaScript", "SQLite"],
+    description:
+      "A simple crowd-sourced price aggregator for small businesses.",
+    badges: [
+      "React.js",
+      "Express.js",
+      "Tailwind CSS",
+      "Node.js",
+      "JavaScript",
+      "SQLite",
+    ],
     link: "https://github.com/anish-sahoo/NearbyPrices",
     link2: "https://nearbyprices.asahoo.dev",
   },
   {
     name: "PawHacks 1.0 Website",
-    description: "Website for the PawHacks 1.0 Hackathon at Northeastern University Oakland.",
-    badges: ["Handlebars", "Bootstrap CSS", "Caddy Server", "DigitalOcean", "Javascript", "MySQL"],
+    description:
+      "Website for the PawHacks 1.0 Hackathon at Northeastern University Oakland.",
+    badges: [
+      "Handlebars",
+      "Bootstrap CSS",
+      "Caddy Server",
+      "DigitalOcean",
+      "Javascript",
+      "MySQL",
+    ],
     link2: "https://pawhacks.io",
   },
   {
