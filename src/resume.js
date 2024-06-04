@@ -45,8 +45,9 @@ export const languages = [
   },
   {
     name: "Rust",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg",
-  }
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg",
+  },
 ];
 
 export const frameworks = [
@@ -56,13 +57,11 @@ export const frameworks = [
   },
   {
     name: "Express.js",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
   },
   {
     name: "Flask",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
   },
   {
     name: "Node.js",
@@ -71,13 +70,13 @@ export const frameworks = [
   },
   {
     name: "Android SDK",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg",
   },
   {
     name: "JUnit 5",
-    image:
-      "https://junit.org/junit5/assets/img/junit5-logo.png",
-  }
+    image: "https://junit.org/junit5/assets/img/junit5-logo.png",
+  },
 ];
 
 export const databases = [
@@ -87,8 +86,7 @@ export const databases = [
   },
   {
     name: "MySQL",
-    image:
-      "",
+    image: "",
   },
   {
     name: "MongoDB",
@@ -99,7 +97,7 @@ export const databases = [
     name: "Redis",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Logo-redis.svg/768px-Logo-redis.svg.png?20210820223643",
-  }
+  },
 ];
 
 export const tools = [
@@ -118,8 +116,7 @@ export const tools = [
   },
   {
     name: "Linux",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
   },
   {
     name: "Docker",
@@ -155,7 +152,7 @@ export const tools = [
     name: "Latex",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/4/45/LaTeX_project_logo_bird.svg",
-  }
+  },
 ];
 
 export const classes = [
@@ -208,7 +205,7 @@ export const jobs = [
         title: "Technical Recruiter/Mentor",
         date: "May 2024 - Present",
         points: [
-          "Conducting technical interviews for applicants and mentor the website team for PawHacks 2.0"
+          "Conducting technical interviews for applicants and mentor the website team for PawHacks 2.0",
         ],
       },
       {
@@ -216,7 +213,7 @@ export const jobs = [
         date: "December 2023 - April 2024",
         points: [
           "Collaborated with 15 classmates to host a hackathon with over 120 attendees and $3000+ worth of prizes",
-          "Developed and deployed the full-stack pawhacks.io hackathon website with over 400 unique visitors"
+          "Developed and deployed the full-stack pawhacks.io hackathon website with over 400 unique visitors",
         ],
       },
     ],
