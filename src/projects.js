@@ -1,7 +1,7 @@
 export var projects = [
   {
     name: "Coming soon ;)",
-    description: "I'm working on a new project that I'm excited to share soon! It has to do with data viz, embeddings and hopefuly some cool graphics",
+    description: "I'm working on a new project that I'm excited to share soon! It has to do with data viz, embeddings and hopefuly some cool graphics!",
     badges: ["Python", "JavaScript", "A lot of cool libraries"],
   },
   {
