@@ -9,7 +9,7 @@ export var projects = [
     name: "easyclassplanner.com",
     description:
       "Web application that generates optimal schedules using Recursive Backtracking and Rust.",
-    badges: ["TypeScript", "Rust", "React.js", "Tailwind CSS", "Node.js"],
+    badges: ["TypeScript", "Rust", "React.js", "Tailwind CSS"],
     link2: "https://easyclassplanner.com",
   },
   {
@@ -19,7 +19,6 @@ export var projects = [
     badges: [
       "TypeScript",
       "React.js",
-      "Tailwind CSS",
       "Python",
       "X API",
       "xAI API",
@@ -32,8 +31,6 @@ export var projects = [
     badges: [
       "React.js",
       "Express.js",
-      "Tailwind CSS",
-      "Node.js",
       "JavaScript",
       "SQLite",
     ],
@@ -45,12 +42,11 @@ export var projects = [
     description:
       "Website for the PawHacks 1.0 Hackathon at Northeastern University Oakland.",
     badges: [
-      "Handlebars",
-      "Bootstrap CSS",
-      "Caddy Server",
-      "DigitalOcean",
       "Javascript",
       "MySQL",
+      "Handlebars",
+      "Caddy Server",
+      "DigitalOcean",
     ],
     link2: "https://pawhacks.io",
   },
@@ -78,9 +74,8 @@ export var projects = [
   {
     name: "Library Management System",
     description: "Web Application with various library management features.",
-    badges: ["React.js", "Tailwind CSS", "Node.js", "Xano", "Netlify"],
+    badges: ["React.js", "JavaScript", "Netlify"],
     link: "https://github.com/anish-sahoo/LibraryManagement",
-    link2: "https://libman.asahoo.dev",
   },
   {
     name: "Expiry Date Reminder",
@@ -88,13 +83,13 @@ export var projects = [
       "Project where user can store the expiry date of their products and get a reminder when the expiry date is near.",
     badges: ["Java", "SQLite", "Android Studio"],
     link: "https://github.com/anish-sahoo/ExpiryDateReminder",
+    link2: "https://play.google.com/store/apps/details?id=com.anish.expirydatereminder",
   },
   {
     name: "Password Manager",
     description:
       "Simple password manager that stores passwords in a SQLite database.",
     badges: ["Python", "SQLite"],
-    link: "https://github.com/anish-sahoo/PasswordManager",
   },
   {
     name: "Wordle Clone",
