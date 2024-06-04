@@ -1,5 +1,23 @@
 export var projects = [
   {
+    name: "Coming soon ;)",
+    description: "I'm working on a new project that I'm excited to share soon! It has to do with data viz, embeddings and hopefuly some cool graphics",
+    badges: ["Python", "JavaScript", "A lot of cool libraries"],
+  },
+  {
+    name: "easyclassplanner.com",
+    description:
+      "Web application that generates optimal schedules using Recursive Backtracking and Rust.",
+    badges: [
+      "TypeScript",
+      "Rust",
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+    ],
+    link2: "https://easyclassplanner.com",
+  },
+  {
     name: "X Developer Challenge Entry",
     description:
       "Web application that uses X API and xAI API to form conclusions about current financial trends.",
