@@ -205,21 +205,18 @@ export const jobs = [
     date: "December 2023 - Present",
     positions: [
       {
-        title: "Full Stack Developer",
-        date: "December 2023 - April 2024",
-        points: [
-          "Conducted 20 hours of in-person office hours and tutoring sessions per week for CS 2510 (Fundamentals of CS 2)",
-          "Instructed over 35 people concurrently during peak times in Java and data structures",
-          "Held on-demand 1-on-1 appointments for debugging help, LeetCode practice, and exam review",
-        ],
-      },
-      {
         title: "Technical Recruiter/Mentor",
         date: "May 2024 - Present",
         points: [
-          "Conducted 20 hours of in-person office hours and tutoring sessions per week for CS 2510 (Fundamentals of CS 2)",
-          "Instructed over 35 people concurrently during peak times in Java and data structures",
-          "Held on-demand 1-on-1 appointments for debugging help, LeetCode practice, and exam review",
+          "Conducting technical interviews for applicants and mentor the website team for PawHacks 2.0"
+        ],
+      },
+      {
+        title: "Full Stack Developer",
+        date: "December 2023 - April 2024",
+        points: [
+          "Collaborated with 15 classmates to host a hackathon with over 120 attendees and $3000+ worth of prizes",
+          "Developed and deployed the full-stack pawhacks.io hackathon website with over 400 unique visitors"
         ],
       },
     ],
