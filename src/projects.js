@@ -1,4 +1,16 @@
 export var projects = [
+  // {
+  //   name: "Work in Progress",
+  //   description:
+  //     "My coming-of-age Scala learning project. Something with Scala, Spark, and ...",
+  //   badges: ["Scala"],
+  // }, 
+  {
+    name: "Work in Progress",
+    description:
+      "Trying to simplify making resumes using Latex",
+    badges: ["Python", "React", "Latex"],
+  },
   {
     name: "AI Hoops",
     description:
