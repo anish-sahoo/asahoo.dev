@@ -19,7 +19,7 @@ export var projects = [
     link: "https://github.com/anish-sahoo/AI-Hoops",
   },
   {
-    name: "Map of all Anime",
+    name: "Map of Top Anime",
     description:
       "A map of the top 5000 anime scraped from MyAnimeList created using word embeddings, t-SNE dimensionality reduction, and rendered in webgl using PixiJS.",
     badges: ["Python", "JavaScript", "PixiJS", "TensorFlow"],

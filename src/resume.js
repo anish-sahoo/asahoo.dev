@@ -162,11 +162,11 @@ export const classes = [
   },
   {
     name: "CS 2500 Fundamentals of Computer Science 1",
-    description: "Introduction to computer science and programming.",
+    description: "Introduction to functional programming with Kotlin.",
   },
   {
     name: "CS 2510 Fundamentals of Computer Science 2",
-    description: "Introduction to object-oriented programming.",
+    description: "Introduction to object-oriented programming with Java.",
   },
   {
     name: "CS 3200 Database Design",
@@ -174,12 +174,16 @@ export const classes = [
   },
   {
     name: "CS 3500 Object-Oriented Design",
-    description: "Introduction to object-oriented design principles.",
+    description: "Advanced object-oriented design principles.",
   },
   {
     name: "CS 3000 Algorithms & Data",
     description: "Introduction to algorithms and data structures.",
   },
+  {
+    name: "CS 4100 Artificial Intelligence",
+    description: "Introduction to AI (search algorithms, RL, ML).",
+  }
 ];
 
 export const jobs = [
