@@ -1,9 +1,17 @@
 export var projects = [
   {
-    name: "Coming soon ;)",
+    name: "AI Hoops",
     description:
-      "I'm working on a new project that I'm excited to share soon! It has to do with data viz, embeddings and hopefuly some cool graphics!",
-    badges: ["Python", "JavaScript", "A lot of cool libraries"],
+      "Taught AI to play Atari's DoubleDunk basketball game using Reinforcement Learning (Double DQN)",
+    badges: ["Python", "PyTorch", "OpenAI Gymnasium"],
+    link: "https://github.com/anish-sahoo/AI-Hoops",
+  },
+  {
+    name: "Map of all Anime",
+    description:
+      "A map of the top 5000 anime scraped from MyAnimeList created using word embeddings, t-SNE dimensionality reduction, and rendered in webgl using PixiJS.",
+    badges: ["Python", "JavaScript", "PixiJS", "TensorFlow"],
+    link: "https://github.com/anish-sahoo/AnimeVisualizer",
   },
   {
     name: "easyclassplanner.com",

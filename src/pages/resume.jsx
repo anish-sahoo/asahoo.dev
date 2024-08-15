@@ -29,12 +29,12 @@ const Resume = () => {
 
   return (
     <Layout>
-      <a href="/Resume_Anish_Sahoo.pdf">
+      <a href="/resume.pdf">
         <Button
           variant="flat"
           className="text-white text-xl font-sans h-14 bg-blue-600"
         >
-          Download my Resume
+          View/Download my Resume
         </Button>
       </a>
       <Card className={cardStyle} shadow="sm">
