@@ -16,5 +16,12 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `asahoo.dev`,
+        customDomain: `analytics.asahoo.dev`,
+      },
+    },
   ],
 };

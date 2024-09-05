@@ -17,7 +17,7 @@ const NotFoundPage = () => {
           By the way, this is the composition of my GitHub repositories:
         </p>
         <img
-          src="https://github-readme-stats-anish-sahoo.vercel.app/api/top-langs/?username=anish-sahoo&theme=react&hide_border=true&count_private=true&include_all_commits=true&langs_count=20&layout=compact&card_width=334"
+          src="https://github-readme-stats-anish-sahoo.vercel.app/api/top-langs/?username=anish-sahoo&theme=react&hide_border=true&count_private=true&include_all_commits=true&langs_count=20&layout=compact&card_width=334&hide=Jupyter+Notebook"
           className="shadow-lg"
           alt="GitHub Stats"
         ></img>

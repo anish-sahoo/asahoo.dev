@@ -23,6 +23,7 @@
     "autoprefixer": "^10.4.16",
     "framer-motion": "^10.16.16",
     "gatsby": "^5.12.12",
+    "gatsby-plugin-plausible": "^0.0.7",
     "gatsby-plugin-postcss": "^6.13.0",
     "gatsby-source-filesystem": "^5.13.0",
     "hamburger-react": "^2.5.0",
