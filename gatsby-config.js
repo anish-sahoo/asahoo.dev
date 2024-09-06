@@ -16,12 +16,12 @@ module.exports = {
       },
       __key: "pages",
     },
-    {
-      resolve: `gatsby-plugin-plausible`,
-      options: {
-        domain: `asahoo.dev`,
-        customDomain: `analytics.asahoo.dev/js/script.js`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-plausible`,
+    //   options: {
+    //     domain: `asahoo.dev`,
+    //     customDomain: `analytics.asahoo.dev`,
+    //   },
+    // },
   ],
 };
