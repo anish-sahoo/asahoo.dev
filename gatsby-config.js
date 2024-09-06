@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-plausible`,
       options: {
         domain: `asahoo.dev`,
-        customDomain: `https://analytics.asahoo.dev`,
+        customDomain: `analytics.asahoo.dev/js/script.js`,
       },
     },
   ],
