@@ -2,6 +2,12 @@ import React from "react";
 
 export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
+    <meta
+      key="referrer-policy"
+      name="referrer"
+      content="no-referrer-when-downgrade"
+    />,
+
     <script
       key="analytics"
       defer
