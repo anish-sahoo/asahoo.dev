@@ -29,7 +29,7 @@ const Resume = () => {
 
   return (
     <Layout>
-      <a href="/coop.pdf">
+      <a href="/resume.pdf">
         <Button
           variant="flat"
           className="text-white text-xl font-sans h-14 bg-blue-600"

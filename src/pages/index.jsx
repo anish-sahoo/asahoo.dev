@@ -50,7 +50,7 @@ const IndexPage = () => {
             transition={{ duration: 0.5, delay: 9 }} // 6
             className="mt-4 flex md:mt-10 md:mx-4"
           >
-            <a href="/coop.pdf">
+            <a href="/resume.pdf">
               <Button
                 size="lg"
                 variant="ghost"
