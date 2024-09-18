@@ -22,15 +22,15 @@ const IndexPage = () => {
         <h2 className="text-xl mt-6 font-sans text-blue-400 italic">
           <TypewriterText
             text="I'm passionate about building things that help people out."
-            delay={5500}
-            speed={50}
+            delay={5500} // 3500
+            speed={50} // 30
           />
         </h2>
         <div className="flex md:flex-row flex-col md:mt-2">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 8.5 }}
+            transition={{ duration: 0.5, delay: 8.5 }} // 5.5
             className="mt-10 flex"
           >
             <Link to="/projects">
@@ -47,10 +47,10 @@ const IndexPage = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 9 }}
+            transition={{ duration: 0.5, delay: 9 }} // 6
             className="mt-4 flex md:mt-10 md:mx-4"
           >
-            <a href="/Resume_Anish_Sahoo.pdf">
+            <a href="/resume.pdf">
               <Button
                 size="lg"
                 variant="ghost"

@@ -48,6 +48,16 @@ export const languages = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg",
   },
+  {
+    name: "C",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+  },
+  {
+    name: "Scala",
+    image:
+      "https://www.scala-lang.org/resources/img/frontpage/scala-logo-solo-white.png",
+  }
 ];
 
 export const frameworks = [
@@ -152,7 +162,7 @@ export const tools = [
     name: "Latex",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/4/45/LaTeX_project_logo_bird.svg",
-  },
+  }
 ];
 
 export const classes = [
@@ -169,30 +179,56 @@ export const classes = [
     description: "Introduction to object-oriented programming with Java.",
   },
   {
-    name: "CS 3200 Database Design",
-    description: "Introduction to database design and management.",
-  },
-  {
-    name: "CS 3500 Object-Oriented Design",
-    description: "Advanced object-oriented design principles.",
+    name: "CS 2810 Mathematics of Data Models",
+    description: "Introduction to linear algebra, probability & statistics for AI.",
   },
   {
     name: "CS 3000 Algorithms & Data",
     description: "Introduction to algorithms and data structures.",
   },
   {
+    name: "CS 3200 Database Design",
+    description: "Introduction to database design and management. (SQL, MongoDB, Redis)",
+  },
+  {
+    name: "CS 3500 Object-Oriented Design",
+    description: "Advanced object-oriented design principles.",
+  },
+  {
+    name: "CS 3650 Computer Systems",
+    description: "Introduction to operating systems and assembly.",
+  },
+  {
     name: "CS 4100 Artificial Intelligence",
     description: "Introduction to AI (search algorithms, RL, ML).",
-  }
-];
+  },
+  {
+    name: "CS 4180 Reinforcement Learning",
+    description: "Advanced reinforcement learning techniques.",
+  },
+  {
+    name: "DS 4400 Machine Learning & Data Mining 1",
+    description: "Introduction to machine learning and data mining.",
+  },
+  ];
 
 export const jobs = [
   {
     company: "Northeastern University - Khoury College of Computer Sciences",
-    date: "January 2024 - April 2024",
+    date: "January 2024 - Present",
     positions: [
       {
-        title: "Teaching Assistant",
+        title: "Teaching Assistant for CS 2500",
+        date: "September 2024 - Present",
+        points: [
+          "Conducted 3 hours of in-person office hours per week for CS 2500 (Fundamentals of CS 1)",
+          // "Held 1-on-1 appointments for debugging help, Kotlin practice, and exam review",
+          "Graded weekly assignments and exams and provided feedback to students",
+        ],
+      },
+      {
+        title: "Teaching Assistant for CS 2510",
+        date: "January 2024 - April 2024",
         points: [
           "Conducted 20 hours of in-person office hours and tutoring sessions per week for CS 2510 (Fundamentals of CS 2)",
           "Instructed over 35 people concurrently during peak times in Java and data structures",
@@ -209,7 +245,7 @@ export const jobs = [
         title: "Technical Recruiter/Mentor",
         date: "May 2024 - Present",
         points: [
-          "Conducting technical interviews for applicants and mentor the website team for PawHacks 2.0",
+          "Conducted technical interviews for applicants and mentored the website team for PawHacks 2.0",
         ],
       },
       {

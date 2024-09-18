@@ -54,7 +54,7 @@ const Resume = () => {
                   Northeastern University
                 </p>
                 <div className="pt-2 md:text-md sm:text-sm text-xs lg:text-xl text-gray-200 pr-1">
-                  <p className="">BS in Computer Science</p>
+                  <p className="">BS in Computer Science, AI Concentration</p>
                   <p className="">
                     Expected Graduation:{" "}
                     <b className="text-white">December 2026</b>{" "}
