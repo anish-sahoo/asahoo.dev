@@ -196,7 +196,7 @@ export const classes = [
   },
   {
     name: "CS 3650 Computer Systems",
-    description: "Introduction to operating systems and assembly.",
+    description: "Introduction to operating systems and Assembly.",
   },
   {
     name: "CS 4100 Artificial Intelligence",
@@ -221,7 +221,8 @@ export const jobs = [
         title: "Teaching Assistant for CS 2500",
         date: "September 2024 - Present",
         points: [
-          "Conducted 3 hours of in-person office hours per week for CS 2500 (Fundamentals of CS 1)",
+          "Conducted 3-5 hours of office hours per week for CS 2500 (Fundamentals of CS 1)",
+          "Instructed students in topics such as Kotlin, functional programming, and recursion",
           // "Held 1-on-1 appointments for debugging help, Kotlin practice, and exam review",
           "Graded weekly assignments and exams and provided feedback to students",
         ],
