@@ -92,6 +92,11 @@ export var projects = [
     link2: "https://snowjam.asahoo.dev",
   },
   {
+    name: "HuskyLink",
+    description: "Hackathon project for Calhacks 10.0, a mentor matching platform for students.",
+    badges: ["Python", "CockroachDB", "Reflex.dev"]
+  },
+  {
     name: "Library Management System",
     description: "Web Application with various library management features.",
     badges: ["React.js", "JavaScript", "Netlify"],
