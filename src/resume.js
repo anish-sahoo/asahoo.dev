@@ -50,14 +50,13 @@ export const languages = [
   },
   {
     name: "C",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
   },
   {
     name: "Scala",
     image:
       "https://www.scala-lang.org/resources/img/frontpage/scala-logo-solo-white.png",
-  }
+  },
 ];
 
 export const frameworks = [
@@ -162,7 +161,7 @@ export const tools = [
     name: "Latex",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/4/45/LaTeX_project_logo_bird.svg",
-  }
+  },
 ];
 
 export const classes = [
@@ -180,7 +179,8 @@ export const classes = [
   },
   {
     name: "CS 2810 Mathematics of Data Models",
-    description: "Introduction to linear algebra, probability & statistics for AI.",
+    description:
+      "Introduction to linear algebra, probability & statistics for AI.",
   },
   {
     name: "CS 3000 Algorithms & Data",
@@ -188,7 +188,8 @@ export const classes = [
   },
   {
     name: "CS 3200 Database Design",
-    description: "Introduction to database design and management. (SQL, MongoDB, Redis)",
+    description:
+      "Introduction to database design and management. (SQL, MongoDB, Redis)",
   },
   {
     name: "CS 3500 Object-Oriented Design",
@@ -210,7 +211,7 @@ export const classes = [
     name: "DS 4400 Machine Learning & Data Mining 1",
     description: "Introduction to machine learning and data mining.",
   },
-  ];
+];
 
 export const jobs = [
   {

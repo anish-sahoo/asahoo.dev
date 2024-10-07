@@ -48,6 +48,15 @@ const ProjectCard = ({ project }) => {
               </Card>
             </div>
           ))}
+          {project.hackathon && (
+            <a href={project.hackathon.link}>
+              <Card className="bg-blue-900 m-1">
+                <p className="text-lg text-gray-300 font-sans font-bold mx-2 my-1">
+                  {project.hackathon.name}
+                </p>
+              </Card>
+            </a>
+          )}
         </div>
       </CardFooter>
     </Card>

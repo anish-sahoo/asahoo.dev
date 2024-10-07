@@ -1,15 +1,27 @@
 export var projects = [
-  // {
-  //   name: "Work in Progress",
-  //   description:
-  //     "My coming-of-age Scala learning project. Something with Scala, Spark, and ...",
-  //   badges: ["Scala"],
-  // }, 
   {
     name: "Work in Progress",
-    description:
-      "Trying to simplify making resumes using Latex",
+    description: "Trying to simplify making resumes using Latex",
     badges: ["Python", "React", "Latex"],
+  },
+  {
+    name: "Sit Down and Study",
+    description:
+      "Web Application for coding practice with AI-generated LeetCode-style questions and online code judging.",
+    badges: [
+      "TypeScript",
+      "React.js",
+      "Express.js",
+      "MongoDB",
+      "Judge0",
+      "OpenAI GPT-4o mini",
+    ],
+    link: "https://github.com/anish-sahoo/SitDownAndStudy",
+    link2: "https://sitdownand.study",
+    hackathon: {
+      name: "YHack 2024",
+      link: "https://devpost.com/software/sit-down-and-study",
+    },
   },
   {
     name: "AI Hoops",
@@ -33,27 +45,18 @@ export var projects = [
     link2: "https://easyclassplanner.com",
   },
   {
-    name: "X Developer Challenge Entry",
+    name: "X Finance",
     description:
       "Web application that uses X API and xAI API to form conclusions about current financial trends.",
-    badges: [
-      "TypeScript",
-      "React.js",
-      "Python",
-      "X API",
-      "xAI API",
-    ],
+    badges: ["TypeScript", "React.js", "Python", "X API", "xAI API"],
+    link: "https://github.com/anish-sahoo/XDevChallenge",
+    hackathon: { name: "X Developer Challenge 2023" },
   },
   {
     name: "Nearby Prices",
     description:
       "A simple crowd-sourced price aggregator for small businesses.",
-    badges: [
-      "React.js",
-      "Express.js",
-      "JavaScript",
-      "SQLite",
-    ],
+    badges: ["React.js", "Express.js", "JavaScript", "SQLite"],
     link: "https://github.com/anish-sahoo/NearbyPrices",
     link2: "https://nearbyprices.asahoo.dev",
   },
@@ -93,8 +96,10 @@ export var projects = [
   },
   {
     name: "HuskyLink",
-    description: "Hackathon project for Calhacks 10.0, a mentor matching platform for students.",
-    badges: ["Python", "CockroachDB", "Reflex.dev"]
+    description:
+      "Hackathon project for Calhacks 10.0, a mentor matching platform for students.",
+    badges: ["Python", "CockroachDB", "Reflex.dev"],
+    hackathon: { name: "CalHacks 10.0" },
   },
   {
     name: "Library Management System",
@@ -108,7 +113,8 @@ export var projects = [
       "Project where user can store the expiry date of their products and get a reminder when the expiry date is near.",
     badges: ["Java", "SQLite", "Android Studio"],
     link: "https://github.com/anish-sahoo/ExpiryDateReminder",
-    link2: "https://play.google.com/store/apps/details?id=com.anish.expirydatereminder",
+    link2:
+      "https://play.google.com/store/apps/details?id=com.anish.expirydatereminder",
   },
   {
     name: "Password Manager",
