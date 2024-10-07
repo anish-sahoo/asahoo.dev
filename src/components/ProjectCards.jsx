@@ -49,7 +49,7 @@ const ProjectCard = ({ project }) => {
             </div>
           ))}
           {project.hackathon && (
-            <a href={project.hackathon.link}>
+            <a href={project.hackathon.link} aria-label={`Link to ${project.hackathon.name}`}>
               <Card className="bg-blue-900 m-1">
                 <p className="text-lg text-gray-300 font-sans font-bold mx-2 my-1">
                   {project.hackathon.name}
