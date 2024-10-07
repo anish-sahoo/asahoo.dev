@@ -5,6 +5,7 @@ import TypewriterText from "../components/TypewriterText";
 import { Link } from "gatsby";
 import { motion } from "framer-motion";
 
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -30,7 +31,7 @@ const IndexPage = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 8.5 }} // 5.5
+            transition={{ duration: 0.5, delay: 0 }} // 8.5 // 5.5
             className="mt-10 flex"
           >
             <Link to="/projects">
@@ -47,7 +48,7 @@ const IndexPage = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 9 }} // 6
+            transition={{ duration: 0.5, delay: 0 }} // 6 // 9
             className="mt-4 flex md:mt-10 md:mx-4"
           >
             <a href="/resume.pdf">
@@ -61,6 +62,30 @@ const IndexPage = () => {
               </Button>
             </a>
           </motion.div>
+          
+        </div>
+        <div>
+        {/* <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0 }} // 6 // 9
+            className="mt-4 flex md:mt-10"
+          >
+            <a href="https://linkedin.com/in/anish-sahoo">
+              <Button
+                size="lg"
+                variant="ghost"
+                radius="small"
+                className="light text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl py-8"
+              >
+                <img
+                src={githubLogo}
+                className="object-scale-down h-12 w-auto rounded-lg"
+                alt="GitHub Logo"
+              ></img>
+              </Button>
+            </a>
+          </motion.div> */}
         </div>
       </div>
     </Layout>

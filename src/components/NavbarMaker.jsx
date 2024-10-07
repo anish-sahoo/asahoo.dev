@@ -11,6 +11,7 @@ import {
 
 import { Link } from "gatsby";
 import { Squash as Hamburger } from "hamburger-react";
+// import githubLogo from "../images/github-mark-white.svg";
 
 const NavbarMaker = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -45,6 +46,7 @@ const NavbarMaker = () => {
         </NavbarBrand>
       </NavbarContent>
 
+      {/* Mobile menu */}
       <NavbarMenu style={{ backgroundColor: "#111827" }} className="my-2">
         {pages.map((page) => (
           <NavbarItem key={page[0] + " mobile"} className="py-1 px-2">
@@ -58,7 +60,8 @@ const NavbarMaker = () => {
           </NavbarItem>
         ))}
       </NavbarMenu>
-
+      
+      {/* Desktop menu */}
       <NavbarContent className="hidden sm:flex gap-12">
         <div className="flex flex-row ml-auto">
           {pages.map((page) => (
@@ -72,6 +75,14 @@ const NavbarMaker = () => {
               </Link>
             </NavbarItem>
           ))}
+        {/* <NavbarItem key={'github'}>
+          <a href="https://github.com/anish-sahoo">
+          <img
+            src={githubLogo}
+            className="object-scale-down ml-16 h-6 w-auto rounded-lg"
+            alt="GitHub Logo"/>
+          </a>
+        </NavbarItem> */}
         </div>
       </NavbarContent>
     </Navbar>
