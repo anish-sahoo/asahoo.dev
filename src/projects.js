@@ -11,7 +11,7 @@ export var projects = [
     link: "https://github.com/anish-sahoo/OpenLegislation",
     link2: "https://openlegislation.asahoo.dev",
     hackathon: {
-      name: "HackHarvard 2024",
+      name: "HackHarvard 2024 - Track Winner",
       link: "https://devpost.com/software/openlegislation",
     }
   },
