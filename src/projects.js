@@ -5,6 +5,17 @@ export var projects = [
     badges: ["Python", "React", "Latex"],
   },
   {
+    name: "OpenLegislation",
+    description: "Congress legislation explorer with Vector Search and bill analysis. Won one of the 4 track prizes at HackHarvard '24.",
+    badges: ["React.js", "Express.js", "MongoDB", "HuggingFace"],
+    link: "https://github.com/anish-sahoo/OpenLegislation",
+    link2: "https://openlegislation.asahoo.dev",
+    hackathon: {
+      name: "HackHarvard 2024",
+      link: "https://devpost.com/software/openlegislation",
+    }
+  },
+  {
     name: "Sit Down and Study",
     description:
       "Web Application for coding practice with AI-generated LeetCode-style questions and online code judging.",
