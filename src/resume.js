@@ -86,6 +86,11 @@ export const frameworks = [
     name: "JUnit 5",
     image: "https://junit.org/junit5/assets/img/junit5-logo.png",
   },
+  {
+    name: "PyTorch",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png",
+  }
 ];
 
 export const databases = [
@@ -215,12 +220,24 @@ export const classes = [
 
 export const jobs = [
   {
+    company: "Priceline (Incoming)",
+    date: "January 2025 - June 2025",
+    positions: [
+      {
+        title: "Backend Software Engineering Co-op",
+        points: [
+          "TBD",
+        ],
+      },
+    ],
+  },
+  {
     company: "Northeastern University - Khoury College of Computer Sciences",
     date: "January 2024 - Present",
     positions: [
       {
         title: "Teaching Assistant for CS 2500",
-        date: "September 2024 - Present",
+        date: "September 2024 - December 2024",
         points: [
           "Conducted 3-5 hours of office hours per week for CS 2500 (Fundamentals of CS 1)",
           "Instructed students in topics such as Kotlin, functional programming, and recursion",

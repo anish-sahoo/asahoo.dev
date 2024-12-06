@@ -5,6 +5,12 @@ export var projects = [
     badges: ["Python", "React", "Latex"],
   },
   {
+    name: "Knights Archers Zombies PPO",
+    description: "Implemented the PPO algorithm on a multi-agent Knights Archers Zombies environment from Pettingzoo.",
+    badges: ["Python", "Pytorch", "Pettingzoo", "Tensorboard"],
+    link: "https://github.com/anish-sahoo/KnightsArchersZombiesPPO",
+  },
+  {
     name: "OpenLegislation",
     description: "Congress legislation explorer with Vector Search and bill analysis. Won one of the 4 track prizes at HackHarvard '24.",
     badges: ["React.js", "Express.js", "MongoDB", "HuggingFace"],
@@ -25,7 +31,6 @@ export var projects = [
       "Express.js",
       "MongoDB",
       "Judge0",
-      "OpenAI GPT-4o mini",
     ],
     link: "https://github.com/anish-sahoo/SitDownAndStudy",
     link2: "https://sitdownand.study",
@@ -38,7 +43,7 @@ export var projects = [
     name: "AI Hoops",
     description:
       "Taught AI to play Atari's DoubleDunk basketball game using Reinforcement Learning (Double DQN)",
-    badges: ["Python", "PyTorch", "OpenAI Gymnasium"],
+    badges: ["Python", "PyTorch", "Gymnasium"],
     link: "https://github.com/anish-sahoo/AI-Hoops",
   },
   {
@@ -93,7 +98,7 @@ export var projects = [
   {
     name: "KhouryKTRL VSCode Extension",
     description:
-      "Extension that helps CS2500 students save time in the execution and linting of Kotlin code. Used by multiple professors and 100+ students at NU Oakland.",
+      "Extension that helps CS2500 students save time in the execution and linting of Kotlin code. Used by multiple professors and 100+ students in 2023 at NU Oakland.",
     badges: ["JavaScript", "VSCode API"],
     link: "https://github.com/anish-sahoo/khouryktrl",
   },

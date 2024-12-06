@@ -23,7 +23,7 @@ const IndexPage = () => {
         <h2 className="text-xl mt-6 font-sans text-blue-400 italic">
           <TypewriterText
             text="I'm passionate about building things that help people out."
-            delay={5500} // 3500
+            delay={6100} // 3500
             speed={50} // 30
           />
         </h2>
