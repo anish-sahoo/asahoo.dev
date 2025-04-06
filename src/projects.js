@@ -1,37 +1,34 @@
 export var projects = [
   {
-    name: "Work in Progress",
-    description: "Trying to simplify making resumes using Latex",
-    badges: ["Python", "React", "Latex"],
+    name: "ResumeTex",
+    description:
+      "API that accepts a resume in JSON format and returns LaTeX code/pdf in Jake's Resume Format",
+    badges: ["Python", "FastAPI", "Latex.js"],
   },
   {
     name: "Knights Archers Zombies PPO",
-    description: "Implemented the PPO algorithm on a multi-agent Knights Archers Zombies environment from Pettingzoo.",
-    badges: ["Python", "Pytorch", "Pettingzoo", "Tensorboard"],
+    description:
+      "Implemented a multi-agent version of the PPO algorithm on the KnightsArchersZombies environment from Pettingzoo.",
+    badges: ["Python", "Pytorch", "Pettingzoo"],
     link: "https://github.com/anish-sahoo/KnightsArchersZombiesPPO",
   },
   {
     name: "OpenLegislation",
-    description: "Congress legislation explorer with Vector Search and bill analysis. Won one of the 4 track prizes at HackHarvard '24.",
+    description:
+      "Congress legislation explorer with Vector Search and bill analysis. Won one of the 4 track prizes at HackHarvard '24.",
     badges: ["React.js", "Express.js", "MongoDB", "HuggingFace"],
     link: "https://github.com/anish-sahoo/OpenLegislation",
     link2: "https://openlegislation.asahoo.dev",
     hackathon: {
       name: "HackHarvard 2024 - Track Winner",
       link: "https://devpost.com/software/openlegislation",
-    }
+    },
   },
   {
     name: "Sit Down and Study",
     description:
       "Web Application for coding practice with AI-generated LeetCode-style questions and online code judging.",
-    badges: [
-      "TypeScript",
-      "React.js",
-      "Express.js",
-      "MongoDB",
-      "Judge0",
-    ],
+    badges: ["TypeScript", "React.js", "Express.js", "MongoDB", "Judge0"],
     link: "https://github.com/anish-sahoo/SitDownAndStudy",
     link2: "https://sitdownand.study",
     hackathon: {
@@ -74,7 +71,7 @@ export var projects = [
       "A simple crowd-sourced price aggregator for small businesses.",
     badges: ["React.js", "Express.js", "JavaScript", "SQLite"],
     link: "https://github.com/anish-sahoo/NearbyPrices",
-    link2: "https://nearbyprices.asahoo.dev",
+    // link2: "https://nearbyprices.asahoo.dev",
   },
   {
     name: "PawHacks 1.0 Website",
@@ -87,7 +84,7 @@ export var projects = [
       "Caddy Server",
       "DigitalOcean",
     ],
-    link2: "https://pawhacks.io",
+    // link2: "https://pawhacks.io",
   },
   {
     name: "Portfolio Website",
