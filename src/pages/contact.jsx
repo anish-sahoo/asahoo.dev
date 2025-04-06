@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "./layout";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/button";
 import githubLogo from "../images/github-mark-white.svg";
 import linkedInLogo from "../images/LI-In-Bug.png";
 

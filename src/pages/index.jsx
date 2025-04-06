@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "./layout";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/button";
 import TypewriterText from "../components/TypewriterText";
 import { Link } from "gatsby";
 import { motion } from "framer-motion";

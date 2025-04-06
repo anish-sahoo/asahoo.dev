@@ -8,8 +8,8 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
-} from "@nextui-org/react";
-import { Divider } from "@nextui-org/react";
+} from "@heroui/react";
+import { Divider } from "@heroui/react";
 import {
   classes,
   jobs,

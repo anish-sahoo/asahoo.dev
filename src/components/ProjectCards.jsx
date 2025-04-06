@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, Divider } from "@nextui-org/react";
-import { CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+import { Card, Divider } from "@heroui/react";
+import { CardBody, CardFooter, CardHeader } from "@heroui/react";
 
 const ProjectCard = ({ project }) => {
   return (

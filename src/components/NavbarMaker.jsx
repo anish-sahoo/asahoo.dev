@@ -7,7 +7,7 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarBrand,
-} from "@nextui-org/navbar";
+} from "@heroui/navbar";
 
 import { Link } from "gatsby";
 import { Squash as Hamburger } from "hamburger-react";
