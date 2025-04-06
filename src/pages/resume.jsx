@@ -175,7 +175,9 @@ const Resume = () => {
           </Card>
 
           <Card className="bg-blue-800 mt-4" shadow="sm">
-            <p className="text-sm text-white font-mono px-4 pt-2">TOOLS</p>
+            <p className="text-sm text-white font-mono px-4 pt-2">
+              TOOLS / INFRASTRUCTURE / CLOUD
+            </p>
             <Divider />
             <BadgeCards cards={tools} />
           </Card>

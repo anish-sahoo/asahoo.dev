@@ -6,8 +6,8 @@ const BadgeCards = ({ cards }) => {
     <div className="flex flex-row flex-wrap">
       {cards.map((card) => (
         <div className="flex flex-row flex-wrap" key={card.name}>
-          <Button className="m-2 flex flex-row items-center bg-gray-800 h-9">
-            {card.image !== "" ? (
+          <Button className="m-2 flex flex-row items-center bg-gray-800 h-8">
+            {/* {card.image !== "" ? (
               <img
                 src={card.image}
                 alt={card.name}
@@ -15,7 +15,7 @@ const BadgeCards = ({ cards }) => {
               />
             ) : (
               <div></div>
-            )}
+            )} */}
             <p className="font-mono text-12 text-white py-2 px-1">
               {card.name}
             </p>
