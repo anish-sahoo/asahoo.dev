@@ -4,6 +4,8 @@ export var projects = [
     description:
       "API that accepts a resume in JSON format and returns LaTeX code/pdf in Jake's Resume Format",
     badges: ["Python", "FastAPI", "Latex.js"],
+    link: "https://github.com/anish-sahoo/ResumeTex",
+    link2: "https://resumetex.asahoo.dev",
   },
   {
     name: "Knights Archers Zombies PPO",
