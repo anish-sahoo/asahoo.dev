@@ -2,7 +2,7 @@ export var projects = [
   {
     name: "ResumeTex",
     description:
-      "API that accepts a resume in JSON format and returns LaTeX code/pdf in Jake's Resume Format",
+      "API that accepts a resume in JSON format and returns LaTeX code/pdf in Jake's Resume Format.",
     badges: ["Python", "FastAPI", "Latex.js"],
     link: "https://github.com/anish-sahoo/ResumeTex",
     link2: "https://resumetex.asahoo.dev",
