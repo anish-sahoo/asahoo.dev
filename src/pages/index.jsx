@@ -5,7 +5,6 @@ import TypewriterText from "../components/TypewriterText";
 import { Link } from "gatsby";
 import { motion } from "framer-motion";
 
-
 const IndexPage = () => {
   return (
     <Layout>
@@ -15,7 +14,7 @@ const IndexPage = () => {
         </h1>
         <h2 className="text-2xl my-4">
           <TypewriterText
-            text="I'm Anish Sahoo, a developer attending Northeastern University in Boston, Massachussets."
+            text="I'm Anish Sahoo, a developer attending Northeastern University in Boston, Massachusetts."
             delay={800}
             speed={50}
           />
@@ -62,10 +61,9 @@ const IndexPage = () => {
               </Button>
             </a>
           </motion.div>
-          
         </div>
         <div>
-        {/* <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }} // 6 // 9
