@@ -50,16 +50,17 @@ const IndexPage = () => {
             transition={{ duration: 0.5, delay: 0 }} // 6 // 9
             className="mt-4 flex md:mt-10 md:mx-4"
           >
-            <a href="/resume.pdf">
+            {/* <a href="/resume.pdf"> */}
               <Button
                 size="lg"
                 variant="ghost"
                 radius="small"
                 className="light text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
+                onPress={() => window.open('/resume.pdf', '_self')}
               >
                 My Resume
               </Button>
-            </a>
+            {/* </a> */}
           </motion.div>
         </div>
         <div>
