@@ -29,14 +29,13 @@ const Resume = () => {
 
   return (
     <Layout>
-      <a href="/resume.pdf">
         <Button
           variant="flat"
           className="text-white text-xl font-sans h-14 bg-blue-600"
+          onPress={() => window.open('/resume.pdf', '_self')}
         >
           View/Download my Resume
         </Button>
-      </a>
       <Card className={cardStyle} shadow="sm">
         <CardHeader>
           <p className={cardHeaderStyle}>Education</p>
