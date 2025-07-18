@@ -1,5 +1,12 @@
 export var projects = [
   {
+    name: "Anime Discovery Engine",
+    description:
+      "Trying to build the most overkill anime recommendation/personalization system that exists. Microservice based architecture with graphql and grpc services. This is a work in progress (I'm done with the backend, working on ui).",
+    badges: ["Python", "Java", "GraphQL", "gRPC", "Elasticsearch", "PostgreSQL", "React/Tailwind"],
+    // link2: "https://github.com/anish-sahoo/AnimeVisualizer",
+  },
+  {
     name: "ResumeTex",
     description:
       "API that accepts a resume in JSON format and returns LaTeX code/pdf in Jake's Resume Format.",
@@ -46,7 +53,7 @@ export var projects = [
     link: "https://github.com/anish-sahoo/AI-Hoops",
   },
   {
-    name: "Map of Top Anime",
+    name: "AnimeVisualizer",
     description:
       "A map of the top 5000 anime scraped from MyAnimeList created using word embeddings, t-SNE dimensionality reduction, and rendered in webgl using PixiJS.",
     badges: ["Python", "JavaScript", "PixiJS", "TensorFlow"],
