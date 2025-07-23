@@ -26,7 +26,7 @@ export var projects = [
     description:
       "Congress legislation explorer with Vector Search and bill analysis. Won one of the 4 track prizes at HackHarvard '24.",
     badges: ["React.js", "Express.js", "MongoDB", "HuggingFace"],
-    link: "https://github.com/anish-sahoo/OpenLegislation",
+    link: "https://github.com/ryankamiri/OpenLegislation",
     link2: "https://openlegislation.asahoo.dev",
     hackathon: {
       name: "HackHarvard 2024 - Track Winner",
@@ -38,7 +38,7 @@ export var projects = [
     description:
       "Web Application for coding practice with AI-generated LeetCode-style questions and online code judging.",
     badges: ["TypeScript", "React.js", "Express.js", "MongoDB", "Judge0"],
-    link: "https://github.com/anish-sahoo/SitDownAndStudy",
+    link: "https://github.com/trentwiles/SitDownAndStudy",
     link2: "https://sitdownand.study",
     hackathon: {
       name: "YHack 2024",
@@ -69,7 +69,7 @@ export var projects = [
   {
     name: "X Finance",
     description:
-      "Web application that uses X API and xAI API to form conclusions about current financial trends.",
+      "Web application that uses X API and xAI Grok LLM to form conclusions about current financial trends.",
     badges: ["TypeScript", "React.js", "Python", "X API", "xAI API"],
     link: "https://github.com/anish-sahoo/XDevChallenge",
     hackathon: { name: "X Developer Challenge 2023" },
