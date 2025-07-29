@@ -27,7 +27,7 @@ export var projects = [
       "Congress legislation explorer with Vector Search and bill analysis. Won one of the 4 track prizes at HackHarvard '24.",
     badges: ["React.js", "Express.js", "MongoDB", "HuggingFace"],
     link: "https://github.com/ryankamiri/OpenLegislation",
-    link2: "https://openlegislation.asahoo.dev",
+    // link2: "https://openlegislation.asahoo.dev",
     hackathon: {
       name: "HackHarvard 2024 - Track Winner",
       link: "https://devpost.com/software/openlegislation",
@@ -39,7 +39,7 @@ export var projects = [
       "Web Application for coding practice with AI-generated LeetCode-style questions and online code judging.",
     badges: ["TypeScript", "React.js", "Express.js", "MongoDB", "Judge0"],
     link: "https://github.com/trentwiles/SitDownAndStudy",
-    link2: "https://sitdownand.study",
+    // link2: "https://sitdownand.study",
     hackathon: {
       name: "YHack 2024",
       link: "https://devpost.com/software/sit-down-and-study",
@@ -58,6 +58,7 @@ export var projects = [
       "A map of the top 5000 anime scraped from MyAnimeList created using word embeddings, t-SNE dimensionality reduction, and rendered in webgl using PixiJS.",
     badges: ["Python", "JavaScript", "PixiJS", "TensorFlow"],
     link: "https://github.com/anish-sahoo/AnimeVisualizer",
+    link2: "https://anime.asahoo.dev"
   },
   {
     name: "easyclassplanner.com",
