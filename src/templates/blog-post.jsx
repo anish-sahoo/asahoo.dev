@@ -64,7 +64,7 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout>
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-4xl mx-auto px-2">
         {/* Back to blog link */}
         <Link 
           to="/blog"
@@ -110,7 +110,7 @@ const BlogPost = ({ data }) => {
 
         {/* Article Content */}
         <Card className="bg-slate-900/30 backdrop-blur-sm border border-slate-700/50 shadow-2xl">
-          <CardBody className="p-8 md:p-12">
+          <CardBody className="p-6 md:p-10">
             <article
               className="prose prose-lg prose-invert max-w-none
                          prose-headings:text-white prose-headings:font-bold prose-headings:tracking-tight
