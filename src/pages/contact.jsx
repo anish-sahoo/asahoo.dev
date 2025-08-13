@@ -1,13 +1,15 @@
 import * as React from "react";
 import Layout from "./layout";
 import { Button } from "@heroui/button";
+import AnimatedGradientBackground from "../components/AnimatedGradientBackground";
 import githubLogo from "../images/github-mark-white.svg";
 import linkedInLogo from "../images/LI-In-Bug.png";
 
 const Contact = () => {
   return (
     <Layout>
-      <div className="flex flex-col items-center text-center">
+      <AnimatedGradientBackground />
+      <div className="flex flex-col items-center text-center relative z-10">
         <p className="my-16 text-2xl">
           Need a developer?{" "}
           <a
@@ -21,7 +23,7 @@ const Contact = () => {
 
         <a href="https://github.com/anish-sahoo">
           <Button
-            className="my-2 bg-gray-950 text-white text-sans font-bold text-md h-14 pr-8 w-52"
+            className="my-2 bg-slate-900/40 backdrop-blur-md border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 text-white font-bold text-md h-14 pr-8 w-52"
             startContent={
               <img
                 src={githubLogo}
@@ -35,7 +37,7 @@ const Contact = () => {
         </a>
         <a href="https://linkedin.com/in/anish-sahoo/">
           <Button
-            className="my-2 bg-blue-600 text-sans font-bold text-white text-md h-14 w-52"
+            className="my-2 bg-slate-900/40 backdrop-blur-md border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 text-white font-bold text-md h-14 w-52"
             startContent={
               <img
                 src={linkedInLogo}

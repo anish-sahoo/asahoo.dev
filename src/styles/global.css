@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* KaTeX CSS for math rendering */
+@import "~katex/dist/katex.min.css";
+
 html {
   margin: 0px;
   height: 100%;
@@ -225,4 +228,39 @@ pre[class*="language-"] code {
 
 .animation-delay-6000 {
   animation-delay: 6s;
+}
+
+/* KaTeX custom styling to match theme */
+.katex {
+  color: rgb(229 231 235) !important; /* text-gray-200 */
+  font-size: 1.1em !important;
+}
+
+.katex-display {
+  margin: 1.5rem 0 !important;
+  padding: 1rem !important;
+  background: rgb(15 23 42) !important; /* bg-slate-900 */
+  border: 1px solid rgb(30 41 59) !important; /* border-slate-800 */
+  border-radius: 0.5rem !important;
+  overflow-x: auto !important;
+}
+
+.katex .base {
+  color: rgb(229 231 235) !important;
+}
+
+.katex .mord {
+  color: rgb(229 231 235) !important;
+}
+
+.katex .mbin, .katex .mrel {
+  color: rgb(96 165 250) !important; /* text-blue-400 */
+}
+
+.katex .mop {
+  color: rgb(34 197 94) !important; /* text-green-500 */
+}
+
+.katex .mpunct {
+  color: rgb(156 163 175) !important; /* text-gray-400 */
 }

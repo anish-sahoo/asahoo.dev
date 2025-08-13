@@ -38,7 +38,7 @@ const AnimatedGradientBackground = () => {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
       {/* Main gradient backdrop */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900/30 to-slate-800"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900/20 to-slate-800"></div>
       
       {/* Primary animated blobs with random positions */}
       <div className="absolute inset-0">
@@ -131,17 +131,6 @@ const AnimatedGradientBackground = () => {
             }}
           ></div>
         ))}
-      </div>
-
-      {/* Subtle grid overlay for tech aesthetic */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
-            linear-gradient(rgba(59, 130, 246, 0.15) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(59, 130, 246, 0.15) 1px, transparent 1px)
-          `,
-          backgroundSize: '60px 60px'
-        }}></div>
       </div>
       
       {/* Animated rays/beams with random positions */}

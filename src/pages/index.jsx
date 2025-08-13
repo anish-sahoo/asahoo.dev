@@ -2,13 +2,15 @@ import * as React from "react";
 import Layout from "./layout";
 import { Button } from "@heroui/button";
 import TypewriterText from "../components/TypewriterText";
+import AnimatedGradientBackground from "../components/AnimatedGradientBackground";
 import { Link } from "gatsby";
 import { motion } from "framer-motion";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="h-full flex flex-col">
+      <AnimatedGradientBackground />
+      <div className="h-full flex flex-col relative z-10">
         <h1 className="text-6xl md:7xl sm:6xl lg:l8xl mt-20">
           <TypewriterText text="Hello." delay={0} />
         </h1>
@@ -38,7 +40,7 @@ const IndexPage = () => {
                 size="lg"
                 variant="ghost"
                 radius="small"
-                className="light text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
+                className="bg-slate-900/40 backdrop-blur-md border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 text-gray-200 hover:text-white lg:text-4xl md:text-3xl text-2xl p-8"
               >
                 My Work
               </Button>
@@ -55,36 +57,13 @@ const IndexPage = () => {
                 size="lg"
                 variant="ghost"
                 radius="small"
-                className="light text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl p-8"
+                className="bg-slate-900/40 backdrop-blur-md border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 text-gray-200 hover:text-white lg:text-4xl md:text-3xl text-2xl p-8"
                 onPress={() => window.open('/resume.pdf', '_self')}
               >
                 My Resume
               </Button>
             {/* </a> */}
           </motion.div>
-        </div>
-        <div>
-          {/* <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0 }} // 6 // 9
-            className="mt-4 flex md:mt-10"
-          >
-            <a href="https://linkedin.com/in/anish-sahoo">
-              <Button
-                size="lg"
-                variant="ghost"
-                radius="small"
-                className="light text-gray-200 hover:text-black hover:bg-blue-700 lg:text-4xl md:text-3xl text-2xl py-8"
-              >
-                <img
-                src={githubLogo}
-                className="object-scale-down h-12 w-auto rounded-lg"
-                alt="GitHub Logo"
-              ></img>
-              </Button>
-            </a>
-          </motion.div> */}
         </div>
       </div>
     </Layout>

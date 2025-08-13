@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../pages/layout";
+import AnimatedGradientBackground from "../components/AnimatedGradientBackground";
 import { Card, CardBody } from "@heroui/react";
 
 const BlogPost = ({ data }) => {
@@ -64,7 +65,8 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout>
-      <div className="max-w-4xl mx-auto px-2">
+      <AnimatedGradientBackground />
+      <div className="max-w-4xl mx-auto px-2 relative z-10">
         {/* Back to blog link */}
         <Link 
           to="/blog"
