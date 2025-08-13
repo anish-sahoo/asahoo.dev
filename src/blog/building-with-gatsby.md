@@ -1,11 +1,11 @@
 ---
-title: "Building with Gatsby and React"
+title: "Sample Blog Post"
 date: "2025-08-12"
 slug: "building-with-gatsby-react"
 tags: ["gatsby", "react", "tailwind", "portfolio"]
 ---
 
-This is a sample article to display how things should look like. I will be posting real stuff in the future
+This is a sample article to display how things should look like. I will be posting real stuff in the future and take this down later.
 
 ## React Components
 
