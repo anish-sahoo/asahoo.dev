@@ -29,6 +29,19 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-katex",
+            options: {
+              // Add any KaTeX options here
+              strict: `ignore`,
+              displayMode: false,
+              throwOnError: false,
+              errorColor: "#cc0000",
+              macros: {
+                "\\vec": "\\mathbf{#1}",
+              }
+            }
+          },
+          {
             resolve: "gatsby-remark-prismjs",
             options: {
               classPrefix: "language-",
