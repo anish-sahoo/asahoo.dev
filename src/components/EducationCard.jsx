@@ -11,7 +11,7 @@ const EducationCard = ({
   logoClassName = "h-20 w-auto bg-black p-2 rounded-lg" 
 }) => {
   return (
-    <Card className="bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
+    <Card className="bg-slate-900/40 backdrop-blur-md border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
       <CardBody className="p-6">
         <div className="flex flex-col md:flex-row items-start gap-6">
           <div className="flex-shrink-0">

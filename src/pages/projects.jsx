@@ -3,12 +3,14 @@ import Layout from "./layout";
 import PageHero from "../components/PageHero";
 import ProjectCards from "../components/ProjectCards";
 import PageFooter from "../components/PageFooter";
+import AnimatedGradientBackground from "../components/AnimatedGradientBackground";
 import { projects } from "../projects";
 
 const Projects = () => {
   return (
     <Layout>
-      <div className="max-w-6xl mx-auto px-4">
+      <AnimatedGradientBackground />
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
         <PageHero 
           subtitle="A collection of projects showcasing my work in web development, machine learning, and software engineering"
         />

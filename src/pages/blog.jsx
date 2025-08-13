@@ -4,13 +4,15 @@ import Layout from "./layout";
 import PageHero from "../components/PageHero";
 import BlogPostCard from "../components/BlogPostCard";
 import EmptyState from "../components/EmptyState";
+import AnimatedGradientBackground from "../components/AnimatedGradientBackground";
 
 const Blog = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
 
   return (
     <Layout>
-      <div className="max-w-5xl mx-auto px-1">
+      <AnimatedGradientBackground />
+      <div className="max-w-5xl mx-auto px-1 relative z-10">
         <PageHero 
           subtitle="Thoughts on software engineering, web development, and technology"
         />

@@ -12,7 +12,7 @@ body {
   margin: 0px;
   min-height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgb(17 24 39), rgb(26, 35, 47));
+  background: rgb(15 23 42);
 }
 
 /* Prism.js code block styling - Triple backticks */
@@ -159,4 +159,70 @@ pre[class*="language-"] code {
 
 .line-numbers-rows > span:before {
   color: rgb(100 116 139) !important;
+}
+
+/* Animated gradient blob animations */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes blob-slow {
+  0% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translate(40px, -30px) scale(1.1) rotate(90deg);
+  }
+  50% {
+    transform: translate(-30px, 40px) scale(0.9) rotate(180deg);
+  }
+  75% {
+    transform: translate(-40px, -20px) scale(1.05) rotate(270deg);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1) rotate(360deg);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-blob-slow {
+  animation: blob-slow 15s infinite;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-3000 {
+  animation-delay: 3s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-5000 {
+  animation-delay: 5s;
+}
+
+.animation-delay-6000 {
+  animation-delay: 6s;
 }

@@ -4,6 +4,7 @@ import PageHero from "../components/PageHero";
 import EducationCard from "../components/EducationCard";
 import ExperienceCard from "../components/ExperienceCard";
 import SkillsCard from "../components/SkillsCard";
+import AnimatedGradientBackground from "../components/AnimatedGradientBackground";
 import { Button } from "@heroui/react";
 import northeasternLogo from "../images/NU_RGB_Notched-N_wordmark_RW.png";
 import {
@@ -19,10 +20,10 @@ import {
 const Resume = () => {
   return (
     <Layout>
-      <div className="max-w-6xl mx-auto px-2">
+      <AnimatedGradientBackground />
+      <div className="max-w-6xl mx-auto px-2 relative z-10">
         <PageHero 
-          title="Resume"
-          subtitle="My educational background, work experience, and technical skills"
+          subtitle="My educational background, experience, and technical skills"
         />
         
         {/* Download Button */}
