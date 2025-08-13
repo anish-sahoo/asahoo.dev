@@ -3,7 +3,7 @@ import { Card, CardBody } from "@heroui/react";
 
 const ProjectCard = ({ project, index }) => {
   return (
-    <Card className="bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 h-full">
+    <Card className="bg-slate-900/40 backdrop-blur-md border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 h-full">
       <CardBody className="p-8 flex flex-col h-full">
         <div className="flex flex-col gap-4 flex-grow">
           {/* Project Header */}
