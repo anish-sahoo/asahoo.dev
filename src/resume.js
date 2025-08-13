@@ -103,6 +103,42 @@ export const tools = [
   },
 ];
 
+export const education = [
+  {
+    institution: "Northeastern University",
+    degree: "BS in Computer Science, AI Concentration",
+    graduation: {
+      status: "Expected Graduation",
+      date: "December 2026"
+    },
+    logo: "/src/images/NU_RGB_Notched-N_wordmark_RW.png",
+    logoAlt: "Northeastern University Logo",
+    courses: [] // Will be populated with classes array in resume.jsx
+  },
+  // Example for future education - just uncomment and modify:
+  // {
+  //   institution: "Stanford University",
+  //   degree: "MS in Computer Science, Machine Learning Specialization",
+  //   graduation: {
+  //     status: "Graduation",
+  //     date: "June 2028"
+  //   },
+  //   logo: "/src/images/stanford-logo.png",
+  //   logoAlt: "Stanford University Logo",
+  //   logoClassName: "h-16 w-auto", // Optional: customize logo styling
+  //   courses: [
+  //     {
+  //       name: "CS 229 Machine Learning",
+  //       description: "Advanced machine learning algorithms and theory"
+  //     },
+  //     {
+  //       name: "CS 231N Convolutional Neural Networks",
+  //       description: "Deep learning for computer vision"
+  //     }
+  //   ]
+  // }
+];
+
 export const classes = [
   {
     name: "CS 1800 Discrete Structures",
