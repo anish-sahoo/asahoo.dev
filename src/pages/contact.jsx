@@ -53,3 +53,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+export const Head = () => <title>Contact - Anish's Portfolio</title>;
