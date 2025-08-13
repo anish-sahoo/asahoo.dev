@@ -1,4 +1,11 @@
 export var projects = [
+  // {
+  //   name: "Image Server/API (Planned)",
+  //   description:
+  //     "Some kind of image hosting server with apis so that later on this website can display my photography.",
+  //   badges: ["Go"],
+  //   // link2: "https://github.com/anish-sahoo/AnimeVisualizer",
+  // },
   {
     name: "Anime Discovery Engine",
     description:
