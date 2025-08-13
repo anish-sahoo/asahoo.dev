@@ -1,187 +1,82 @@
 import * as React from "react";
 import Layout from "./layout";
+import PageHero from "../components/PageHero";
+import EducationCard from "../components/EducationCard";
+import ExperienceCard from "../components/ExperienceCard";
+import SkillsCard from "../components/SkillsCard";
+import { Button } from "@heroui/react";
+import northeasternLogo from "../images/NU_RGB_Notched-N_wordmark_RW.png";
 import {
-  Accordion,
-  AccordionItem,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-} from "@heroui/react";
-import { Divider } from "@heroui/react";
-import {
-  classes,
   jobs,
   languages,
   frameworks,
   tools,
   databases,
+  education,
+  classes,
 } from "../resume";
 
-import northeasternLogo from "../images/NU_RGB_Notched-N_wordmark_RW.png";
-
-import BadgeCards from "../components/BadgeCards";
-
 const Resume = () => {
-  const cardStyle = "my-6 bg-blue-950";
-  const cardHeaderStyle = "text-md text-gray-300 font-mono";
-
   return (
     <Layout>
-        <Button
-          variant="flat"
-          className="text-white text-xl font-sans h-14 bg-blue-600"
-          onPress={() => window.open('/resume.pdf', '_self')}
-        >
-          View/Download my Resume
-        </Button>
-      <Card className={cardStyle} shadow="sm">
-        <CardHeader>
-          <p className={cardHeaderStyle}>Education</p>
-        </CardHeader>
-        <CardBody className="text-gray-300">
-          <Card className="bg-blue-800 text-white mb-2 p-2 lg:p-4">
-            <div className="flex flex-row items-center gap-4">
-              <img
-                src={northeasternLogo}
-                className="object-scale-down h-24 w-auto py-2 px-1 bg-black m-2 rounded-lg"
-                alt="Northeastern University Logo"
-              ></img>
-              <div className="flex flex-col">
-                <p className="lg:text-2xl md:text-xl sm:text-xl text-sm font-bold">
-                  Northeastern University
-                </p>
-                <div className="pt-2 md:text-md sm:text-sm text-xs lg:text-xl text-gray-200 pr-1">
-                  <p className="">BS in Computer Science, AI Concentration</p>
-                  <p className="">
-                    Expected Graduation:{" "}
-                    <b className="text-white">December 2026</b>{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <CardFooter>
-              <div className="w-full">
-                <Accordion
-                  className="text-gray-200 font-mono rounded-lg bg-blue-900"
-                  isCompact
-                >
-                  <AccordionItem
-                    className="text-lg pl-4 py-2"
-                    title={
-                      <p className="font-bold">
-                        {"Relevant Coursework: (Click to Expand)"}
-                      </p>
-                    }
-                    indicator={<p className="text-white text-xl pr-2">{`<`}</p>}
-                  >
-                    <Card
-                      className=" text-gray-300 p-4 rounded-lg"
-                      shadow="none"
-                    >
-                      {classes.map((course) => (
-                        <div
-                          className="relative inline-block group my-1"
-                          key={course.name}
-                        >
-                          <p className="hover:text-gray-400 hover:underline inline-block transition-colors duration-600">
-                            {course.name}
-                          </p>
-                          <p className="hidden md:inline-block md:group-hover:inline-block text-blue-500 italic transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-                            <span className="text-gray-400">{`: `}</span>
-                            {course.description}
-                          </p>
-                        </div>
-                      ))}
-                    </Card>
-                  </AccordionItem>
-                </Accordion>
-              </div>
-            </CardFooter>
-          </Card>
-        </CardBody>
-      </Card>
+      <div className="max-w-6xl mx-auto px-2">
+        <PageHero 
+          title="Resume"
+          subtitle="My educational background, work experience, and technical skills"
+        />
+        
+        {/* Download Button */}
+        <div className="text-center mb-12">
+          <Button
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 text-lg transition-colors"
+            onPress={() => window.open('/resume.pdf', '_self')}
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download Resume PDF
+          </Button>
+        </div>
 
-      <Card className={cardStyle} shadow="sm">
-        <CardHeader>
-          <p className={cardHeaderStyle}>Work Experience</p>
-        </CardHeader>
-        <CardBody>
-          {jobs.map((job, index) => (
-            <Card
-              key={index}
-              className="text-gray-300 text-sm lg:text-lg bg-blue-800 p-2 lg:p-4 mb-2 font-sans"
-              shadow="sm"
-            >
-              <CardHeader className="md:text-2xl text-md font-bold text-white flex flex-row py-1 px-2 hover:underline">
-                <p className="flex-grow text-left">{job.company}</p>
-                <p className="justify-end text-right">{job.date}</p>
-              </CardHeader>
-              <CardBody className="lg:text-xl">
-                {job.positions.map((position, positionIndex) => (
-                  <div
-                    key={positionIndex}
-                    className={positionIndex > 0 ? "mt-4" : ""}
-                  >
-                    <div className="text-gray-300 flex flex-row ">
-                      <p className="flex-grow italic ml-2 text-left md:font-mono">
-                        {position.title}
-                      </p>
-                      <p
-                        className={`justify-end italic text-right ${position.date ? "" : "hidden"}`}
-                      >
-                        {position.date}
-                      </p>
-                    </div>
-                    <div className="text-gray-300 bg-blue-900 md:p-6 p-2 rounded-xl">
-                      {position.points.map((point, pointIndex) => (
-                        <div key={pointIndex} className="flex flex-row">
-                          <p className="mr-2">-</p>
-                          <p>{point}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </CardBody>
-            </Card>
-          ))}
-        </CardBody>
-      </Card>
+        {/* Education Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-white mb-6 font-mono">Education</h2>
+          <div className="space-y-6">
+            {education.map((edu, index) => (
+              <EducationCard
+                key={index}
+                institution={edu.institution}
+                degree={edu.degree}
+                graduation={edu.graduation}
+                logo={edu.institution === "Northeastern University" ? northeasternLogo : edu.logo}
+                logoAlt={edu.logoAlt}
+                courses={edu.institution === "Northeastern University" ? classes : edu.courses}
+              />
+            ))}
+          </div>
+        </section>
 
-      <Card className={cardStyle} shadow="sm">
-        <CardHeader>
-          <p className={cardHeaderStyle}>Skills</p>
-        </CardHeader>
-        <CardBody className="text-gray-300">
-          <Card className="bg-blue-800" shadow="sm">
-            <p className="text-sm text-white font-mono px-4 pt-2">LANGUAGES</p>
-            <Divider />
-            <BadgeCards cards={languages} />
-          </Card>
+        {/* Experience Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-white mb-6 font-mono">Work Experience</h2>
+          <div className="space-y-6">
+            {jobs.map((job, index) => (
+              <ExperienceCard key={index} job={job} index={index} />
+            ))}
+          </div>
+        </section>
 
-          <Card className="bg-blue-800 mt-4" shadow="sm">
-            <p className="text-sm text-white font-mono px-4 pt-2">FRAMEWORKS</p>
-            <Divider />
-            <BadgeCards cards={frameworks} />
-          </Card>
-
-          <Card className="bg-blue-800 mt-4" shadow="sm">
-            <p className="text-sm text-white font-mono px-4 pt-2">DATABASES</p>
-            <Divider />
-            <BadgeCards cards={databases} />
-          </Card>
-
-          <Card className="bg-blue-800 mt-4" shadow="sm">
-            <p className="text-sm text-white font-mono px-4 pt-2">
-              TOOLS / INFRASTRUCTURE / CLOUD
-            </p>
-            <Divider />
-            <BadgeCards cards={tools} />
-          </Card>
-        </CardBody>
-      </Card>
+        {/* Skills Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-white mb-6 font-mono">Technical Skills</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <SkillsCard title="LANGUAGES" skills={languages} />
+            <SkillsCard title="FRAMEWORKS" skills={frameworks} />
+            <SkillsCard title="DATABASES" skills={databases} />
+            <SkillsCard title="TOOLS & INFRASTRUCTURE" skills={tools} />
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 };
