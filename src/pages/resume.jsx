@@ -187,3 +187,5 @@ const Resume = () => {
 };
 
 export default Resume;
+
+export const Head = () => <title>Resume - Anish's Portfolio</title>;

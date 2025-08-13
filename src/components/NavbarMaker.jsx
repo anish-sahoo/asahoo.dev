@@ -18,6 +18,7 @@ const NavbarMaker = () => {
   const pages = [
     ["/", "Home"],
     ["/projects", "Projects"],
+    ["/blog", "Blog"],
     ["/resume", "Resume"],
     ["/contact", "Contact"],
   ];
