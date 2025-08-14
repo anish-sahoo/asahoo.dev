@@ -168,7 +168,7 @@ export const classes = [
   {
     name: "CS 3200 Database Design",
     description:
-      "Introduction to database design and management. (SQL, MongoDB, Redis)",
+      "Introduction to database design & management. (SQL, MongoDB, Redis)",
   },
   {
     name: "CS 3500 Object-Oriented Design",
