@@ -145,6 +145,10 @@ export const classes = [
     description: "Introduction to discrete mathematics and logic.",
   },
   {
+    name: "ARTD 2360 Introduction to Photography",
+    description: "Photography and Photo Editing basics."
+  },
+  {
     name: "CS 2500 Fundamentals of Computer Science 1",
     description: "Introduction to functional programming with Kotlin.",
   },
@@ -175,6 +179,10 @@ export const classes = [
     description: "Introduction to operating systems and Assembly.",
   },
   {
+    name: "CS 3800 Theory of Computation",
+    description: "Introduces the automata theory, computability, etc."
+  },
+  {
     name: "CS 4100 Artificial Intelligence",
     description: "Introduction to AI (search algorithms, RL, ML).",
   },
@@ -185,6 +193,14 @@ export const classes = [
   {
     name: "DS 4400 Machine Learning & Data Mining 1",
     description: "Introduction to machine learning and data mining.",
+  },
+  {
+    name: "CS 4530 Fundamentals of Software Engineering",
+    description: "Full-stack agile software development in TypeScript."
+  },
+  {
+    name: "CS 4973 Intro to Computer Vision",
+    description: "Computer Vision fundamentals and techniques."
   },
 ];
 
