@@ -6,9 +6,9 @@ const PageFooter = ({ message, linkText, linkUrl }) => {
       <p className="text-gray-400 font-mono text-sm">
         {message}{" "}
         {linkText && linkUrl && (
-          <a 
-            href={linkUrl} 
-            target="_blank" 
+          <a
+            href={linkUrl}
+            target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-300 transition-colors"
           >

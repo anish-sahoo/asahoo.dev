@@ -12,5 +12,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [heroui(), require('@tailwindcss/typography')],
+  plugins: [heroui(), require("@tailwindcss/typography")],
 };

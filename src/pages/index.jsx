@@ -53,15 +53,15 @@ const IndexPage = () => {
             className="mt-4 flex md:mt-10 md:mx-4"
           >
             {/* <a href="/resume.pdf"> */}
-              <Button
-                size="lg"
-                variant="ghost"
-                radius="small"
-                className="bg-slate-900/40 backdrop-blur-md border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 text-gray-200 hover:text-white lg:text-4xl md:text-3xl text-2xl p-8"
-                onPress={() => window.open('/resume.pdf', '_self')}
-              >
-                My Resume
-              </Button>
+            <Button
+              size="lg"
+              variant="ghost"
+              radius="small"
+              className="bg-slate-900/40 backdrop-blur-md border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 text-gray-200 hover:text-white lg:text-4xl md:text-3xl text-2xl p-8"
+              onPress={() => window.open("/resume.pdf", "_self")}
+            >
+              My Resume
+            </Button>
             {/* </a> */}
           </motion.div>
         </div>

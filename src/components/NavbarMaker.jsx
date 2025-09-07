@@ -61,7 +61,7 @@ const NavbarMaker = () => {
           </NavbarItem>
         ))}
       </NavbarMenu>
-      
+
       {/* Desktop menu */}
       <NavbarContent className="hidden sm:flex gap-12">
         <div className="flex flex-row ml-auto">
@@ -76,7 +76,7 @@ const NavbarMaker = () => {
               </Link>
             </NavbarItem>
           ))}
-        {/* <NavbarItem key={'github'}>
+          {/* <NavbarItem key={'github'}>
           <a href="https://github.com/anish-sahoo">
           <img
             src={githubLogo}

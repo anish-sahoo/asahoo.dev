@@ -253,7 +253,8 @@ pre[class*="language-"] code {
   color: rgb(229 231 235) !important;
 }
 
-.katex .mbin, .katex .mrel {
+.katex .mbin,
+.katex .mrel {
   color: rgb(96 165 250) !important; /* text-blue-400 */
 }
 

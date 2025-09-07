@@ -11,13 +11,11 @@ const Projects = () => {
     <Layout>
       <AnimatedGradientBackground />
       <div className="max-w-6xl mx-auto px-4 relative z-10">
-        <PageHero 
-          subtitle="A collection of projects showcasing my work in web development, machine learning, and software engineering"
-        />
-        
+        <PageHero subtitle="A collection of projects showcasing my work in web development, machine learning, and software engineering" />
+
         <ProjectCards projects={projects} />
-        
-        <PageFooter 
+
+        <PageFooter
           message="More projects coming soon! Check out my"
           linkText="GitHub"
           linkUrl="https://github.com/anish-sahoo"

@@ -11,24 +11,24 @@ const BlogPost = ({ data }) => {
     // Add copy buttons to code blocks
     const addCopyButtons = () => {
       const codeBlocks = document.querySelectorAll('pre[class*="language-"]');
-      
+
       codeBlocks.forEach((block) => {
         // Skip if button already exists
-        if (block.querySelector('.code-copy-button')) return;
-        
-        const button = document.createElement('button');
-        button.className = 'code-copy-button';
-        button.setAttribute('title', 'Copy code');
+        if (block.querySelector(".code-copy-button")) return;
+
+        const button = document.createElement("button");
+        button.className = "code-copy-button";
+        button.setAttribute("title", "Copy code");
         button.innerHTML = `
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
           </svg>
         `;
-        
-        button.addEventListener('click', async () => {
-          const code = block.querySelector('code');
+
+        button.addEventListener("click", async () => {
+          const code = block.querySelector("code");
           const text = code.textContent || code.innerText;
-          
+
           try {
             await navigator.clipboard.writeText(text);
             button.innerHTML = `
@@ -36,30 +36,30 @@ const BlogPost = ({ data }) => {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             `;
-            button.classList.add('copied');
-            button.setAttribute('title', 'Copied!');
-            
+            button.classList.add("copied");
+            button.setAttribute("title", "Copied!");
+
             setTimeout(() => {
               button.innerHTML = `
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                 </svg>
               `;
-              button.classList.remove('copied');
-              button.setAttribute('title', 'Copy code');
+              button.classList.remove("copied");
+              button.setAttribute("title", "Copy code");
             }, 2000);
           } catch (err) {
-            console.error('Failed to copy: ', err);
+            console.error("Failed to copy: ", err);
           }
         });
-        
+
         block.appendChild(button);
       });
     };
 
     // Add buttons after content is rendered
     const timer = setTimeout(addCopyButtons, 100);
-    
+
     return () => clearTimeout(timer);
   }, [post.html]);
 
@@ -68,12 +68,22 @@ const BlogPost = ({ data }) => {
       <AnimatedGradientBackground />
       <div className="max-w-4xl mx-auto px-2 relative z-10">
         {/* Back to blog link */}
-        <Link 
+        <Link
           to="/blog"
           className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors duration-200 font-mono text-sm mb-8"
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
           </svg>
           Back to blog
         </Link>
@@ -83,17 +93,15 @@ const BlogPost = ({ data }) => {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             {post.frontmatter.title}
           </h1>
-          
+
           <div className="flex flex-wrap items-center gap-4 text-gray-400 mb-6">
-            <time className="font-mono text-sm">
-              {post.frontmatter.date}
-            </time>
+            <time className="font-mono text-sm">{post.frontmatter.date}</time>
             <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
             <span className="font-mono text-sm">
               {post.timeToRead} min read
             </span>
           </div>
-          
+
           {post.frontmatter.tags && (
             <div className="flex flex-wrap gap-2">
               {post.frontmatter.tags.map((tag) => (
@@ -106,7 +114,7 @@ const BlogPost = ({ data }) => {
               ))}
             </div>
           )}
-          
+
           <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mt-8"></div>
         </header>
 
@@ -138,12 +146,22 @@ const BlogPost = ({ data }) => {
         <footer className="mt-16 mb-8">
           <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mb-8"></div>
           <div className="text-center">
-            <Link 
+            <Link
               to="/blog"
               className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors duration-200 font-mono text-sm"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
               Back to all posts
             </Link>
@@ -157,7 +175,7 @@ const BlogPost = ({ data }) => {
 export default BlogPost;
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       timeToRead
@@ -170,4 +188,6 @@ export const query = graphql`
   }
 `;
 
-export const Head = ({ data }) => <title>{data.markdownRemark.frontmatter.title} - Anish's Portfolio</title>;
+export const Head = ({ data }) => (
+  <title>{data.markdownRemark.frontmatter.title} - Anish's Portfolio</title>
+);

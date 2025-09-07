@@ -109,11 +109,11 @@ export const education = [
     degree: "BS in Computer Science, AI Concentration",
     graduation: {
       status: "Expected Graduation",
-      date: "December 2026"
+      date: "December 2026",
     },
     logo: "/src/images/NU_RGB_Notched-N_wordmark_RW.png",
     logoAlt: "Northeastern University Logo",
-    courses: [] // Will be populated with classes array in resume.jsx
+    courses: [], // Will be populated with classes array in resume.jsx
   },
   // Example for future education - just uncomment and modify:
   // {
@@ -146,7 +146,7 @@ export const classes = [
   },
   {
     name: "ARTD 2360 Introduction to Photography",
-    description: "Photography and Photo Editing basics."
+    description: "Photography and Photo Editing basics.",
   },
   {
     name: "CS 2500 Fundamentals of Computer Science 1",
@@ -180,7 +180,7 @@ export const classes = [
   },
   {
     name: "CS 3800 Theory of Computation",
-    description: "Introduces the automata theory, computability, etc."
+    description: "Introduces the automata theory, computability, etc.",
   },
   {
     name: "CS 4100 Artificial Intelligence",
@@ -196,11 +196,11 @@ export const classes = [
   },
   {
     name: "CS 4530 Fundamentals of Software Engineering",
-    description: "Full-stack agile software development in TypeScript."
+    description: "Full-stack agile software development in TypeScript.",
   },
   {
     name: "CS 4973 Intro to Computer Vision",
-    description: "Computer Vision fundamentals and techniques."
+    description: "Computer Vision fundamentals and techniques.",
   },
 ];
 

@@ -22,18 +22,26 @@ const Resume = () => {
     <Layout>
       <AnimatedGradientBackground />
       <div className="max-w-6xl mx-auto px-2 relative z-10">
-        <PageHero 
-          subtitle="My educational background, experience, and technical skills"
-        />
-        
+        <PageHero subtitle="My educational background, experience, and technical skills" />
+
         {/* Download Button */}
         <div className="text-center mb-12">
           <Button
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 text-lg transition-colors"
-            onPress={() => window.open('/resume.pdf', '_self')}
+            onPress={() => window.open("/resume.pdf", "_self")}
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
             </svg>
             Download Resume PDF
           </Button>
@@ -41,7 +49,9 @@ const Resume = () => {
 
         {/* Education Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6 font-mono">Education</h2>
+          <h2 className="text-2xl font-bold text-white mb-6 font-mono">
+            Education
+          </h2>
           <div className="space-y-6">
             {education.map((edu, index) => (
               <EducationCard
@@ -49,9 +59,17 @@ const Resume = () => {
                 institution={edu.institution}
                 degree={edu.degree}
                 graduation={edu.graduation}
-                logo={edu.institution === "Northeastern University" ? northeasternLogo : edu.logo}
+                logo={
+                  edu.institution === "Northeastern University"
+                    ? northeasternLogo
+                    : edu.logo
+                }
                 logoAlt={edu.logoAlt}
-                courses={edu.institution === "Northeastern University" ? classes : edu.courses}
+                courses={
+                  edu.institution === "Northeastern University"
+                    ? classes
+                    : edu.courses
+                }
               />
             ))}
           </div>
@@ -59,7 +77,9 @@ const Resume = () => {
 
         {/* Experience Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6 font-mono">Work Experience</h2>
+          <h2 className="text-2xl font-bold text-white mb-6 font-mono">
+            Work Experience
+          </h2>
           <div className="space-y-6">
             {jobs.map((job, index) => (
               <ExperienceCard key={index} job={job} index={index} />
@@ -69,7 +89,9 @@ const Resume = () => {
 
         {/* Skills Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6 font-mono">Technical Skills</h2>
+          <h2 className="text-2xl font-bold text-white mb-6 font-mono">
+            Technical Skills
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <SkillsCard title="LANGUAGES" skills={languages} />
             <SkillsCard title="FRAMEWORKS" skills={frameworks} />

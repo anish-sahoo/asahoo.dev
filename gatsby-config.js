@@ -38,8 +38,8 @@ module.exports = {
               errorColor: "#cc0000",
               macros: {
                 "\\vec": "\\mathbf{#1}",
-              }
-            }
+              },
+            },
           },
           {
             resolve: "gatsby-remark-prismjs",

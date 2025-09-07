@@ -13,23 +13,17 @@ const Blog = ({ data }) => {
     <Layout>
       <AnimatedGradientBackground />
       <div className="max-w-5xl mx-auto px-1 relative z-10">
-        <PageHero 
-          subtitle="Thoughts on software engineering, web development, and technology"
-        />
-        
+        <PageHero subtitle="Thoughts on software engineering, web development, and technology" />
+
         {/* Blog Posts Grid */}
         <div className="space-y-8">
           {posts.map((post, index) => (
-            <BlogPostCard 
-              key={post.id}
-              post={post}
-              index={index}
-            />
+            <BlogPostCard key={post.id} post={post} index={index} />
           ))}
         </div>
-        
+
         {posts.length === 0 && (
-          <EmptyState 
+          <EmptyState
             icon="📝"
             title="No posts yet"
             subtitle="Check back soon for new content!"
