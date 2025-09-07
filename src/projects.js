@@ -2,7 +2,7 @@ export var projects = [
   {
     name: "image-storage-api",
     description:
-      "Small scale file hosting server (not quite an FTP server) to be used to host assets for asahoo.dev",
+      "Small scale file hosting server (not quite an FTP server) to be used to host assets for this website.",
     badges: ["Go", "HTMX"],
     link2: "https://github.com/anish-sahoo/image-storage-api",
   },
@@ -148,7 +148,7 @@ export var projects = [
   {
     name: "Expiry Date Reminder",
     description:
-      "Project where user can store the expiry date of their products and get a reminder when the expiry date is near.",
+      "Project where user can store the expiry date of their products and get a reminder when the expiry date is near. Currently at ",
     badges: ["Java", "SQLite", "Android Studio"],
     link: "https://github.com/anish-sahoo/ExpiryDateReminder",
     link2:
