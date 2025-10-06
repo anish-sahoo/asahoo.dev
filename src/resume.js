@@ -21,25 +21,37 @@ export const languages = [
     name: "HTML/CSS",
   },
   {
-    name: "Latex",
+    name: "LaTeX",
   },
 ];
 
 export const frameworks = [
   {
-    name: "Java Spring",
+    name: "Java Spring Boot",
   },
   {
-    name: "React.js",
+    name: "gRPC"
   },
   {
-    name: "Express.js",
+    name: "REST"
+  },
+  {
+    name: "GraphQL"
+  },
+  {
+    name: "Apache Kafka"
+  },
+  {
+    name: "Elasticsearch"
   },
   {
     name: "Flask",
   },
   {
     name: "Node.js",
+  },
+  {
+    name: "Express.js",
   },
   {
     name: "Android SDK",
@@ -49,6 +61,9 @@ export const frameworks = [
   },
   {
     name: "PyTorch",
+  },
+  {
+    name: "React.js",
   },
 ];
 
@@ -71,6 +86,9 @@ export const databases = [
   {
     name: "PostgreSQL",
   },
+  {
+    name: "BigTable"
+  }
 ];
 
 export const tools = [
@@ -90,7 +108,7 @@ export const tools = [
     name: "Kubernetes",
   },
   {
-    name: "Google Cloud Platform",
+    name: "Google Cloud Platform (GCP)",
   },
   {
     name: "NewRelic",
@@ -99,8 +117,14 @@ export const tools = [
     name: "Splunk",
   },
   {
-    name: "Aiven",
+    name: "Grafana Cloud",
   },
+  {
+    name: "Terraform"
+  },
+  {
+    name: "Amazon Web Services (AWS)"
+  }
 ];
 
 export const education = [
@@ -144,10 +168,10 @@ export const classes = [
     name: "CS 1800 Discrete Structures",
     description: "Introduction to discrete mathematics and logic.",
   },
-  {
-    name: "ARTD 2360 Introduction to Photography",
-    description: "Photography and Photo Editing basics.",
-  },
+  // {
+  //   name: "ARTD 2360 Introduction to Photography",
+  //   description: "Photography and Photo Editing basics.",
+  // },
   {
     name: "CS 2500 Fundamentals of Computer Science 1",
     description: "Introduction to functional programming with Kotlin.",
@@ -195,8 +219,8 @@ export const classes = [
     description: "Introduction to machine learning and data mining.",
   },
   {
-    name: "CS 4530 Fundamentals of Software Engineering",
-    description: "Full-stack agile software development in TypeScript.",
+    name: "CS 4535 Software Engineering for Consultants",
+    description: "Software Engineering consulting & development for clients.",
   },
   {
     name: "CS 4973 Intro to Computer Vision",
@@ -207,28 +231,28 @@ export const classes = [
 export const jobs = [
   {
     company: "Priceline",
-    date: "January 2025 - Present",
+    date: "January 2025 - June 2025",
     positions: [
       {
         title: "Backend Software Engineering Co-op",
         points: [
-          "Worked for the Enterprise Data Products & Services Team",
-          "Mostly worked on recommendation and personalization systems",
+          "Delivered personalization and recommendation features by building scalable REST and gRPC services in Spring, working cross-functionally with product, data, and 4+ engineering teams in an Agile environment",
+          "Led integration and A/B testing of Google Vertex AI Search for the Penny chatbot's search service in coordination with Google engineers, improving result relevance by around 25% across two evaluation metrics",
+          "Engineered and deployed a Kafka-based system for real-time hotel price tracking and notifications, streaming millions of daily events with high throughput and instrumented for observability using NewRelic and Splunk",
+          "Designed and implemented a relevancy ranking algorithm to personalize user experiences based on past activity"
         ],
       },
     ],
   },
   {
-    company: "Northeastern University - Khoury College of Computer Sciences",
-    date: "January 2024 - Present",
+    company: "Northeastern University",
+    date: "January 2024 - December 2024 (seasonal)",
     positions: [
       {
         title: "Teaching Assistant for CS 2500",
         date: "September 2024 - December 2024",
         points: [
-          "Conducted 3-5 hours of office hours per week for CS 2500 (Fundamentals of CS 1)",
-          "Instructed students in topics such as Kotlin, functional programming, and recursion",
-          // "Held 1-on-1 appointments for debugging help, Kotlin practice, and exam review",
+          "Conducted 3-5 hours of office hours per week for Intro CS 1 class, instructing students in topics such as Kotlin, functional programming, and recursion",
           "Graded weekly assignments and exams and provided feedback to students",
         ],
       },
@@ -236,30 +260,21 @@ export const jobs = [
         title: "Teaching Assistant for CS 2510",
         date: "January 2024 - April 2024",
         points: [
-          "Conducted 20 hours of in-person office hours and tutoring sessions per week for CS 2510 (Fundamentals of CS 2)",
-          "Instructed over 35 people concurrently during peak times in Java and data structures",
+          "Conducted 20 hours of in-person office hours and tutoring sessions per week for Intro CS 2 class, instructing groups of 60+ people in Java and data structures",
           "Held on-demand 1-on-1 appointments for debugging help, LeetCode practice, and exam review",
         ],
       },
     ],
   },
   {
-    company: "PawHacks",
-    date: "December 2023 - Present",
+    company: "PawHacks (Student-led Hackathon)",
+    date: "December 2023 - April 2024",
     positions: [
       {
-        title: "Technical Recruiter/Mentor",
-        date: "May 2024 - Present",
-        points: [
-          "Conducted technical interviews for applicants and mentored the website team for PawHacks 2.0",
-        ],
-      },
-      {
-        title: "Full Stack Developer",
-        date: "December 2023 - April 2024",
+        title: "Software Engineer",
         points: [
           "Collaborated with 15 classmates to host a hackathon with over 120 attendees and $3000+ worth of prizes",
-          "Developed and deployed the full-stack pawhacks.io hackathon website with over 400 unique visitors",
+          "Managed backend infrastructure and contributed to development for the pawhacks.io website with 10,000+ visits",
         ],
       },
     ],

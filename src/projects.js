@@ -4,7 +4,7 @@ export var projects = [
     description:
       "Small scale file hosting server (not quite an FTP server) to be used to host assets for this website.",
     badges: ["Go", "HTMX"],
-    link2: "https://github.com/anish-sahoo/image-storage-api",
+    link: "https://github.com/anish-sahoo/image-storage-api",
   },
   {
     name: "Anime Discovery Engine",
@@ -17,7 +17,7 @@ export var projects = [
       "gRPC",
       "Elasticsearch",
       "PostgreSQL",
-      "React/Tailwind",
+      "NextJS"
     ],
     // link2: "https://github.com/anish-sahoo/AnimeVisualizer",
   },

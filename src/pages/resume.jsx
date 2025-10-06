@@ -94,9 +94,9 @@ const Resume = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <SkillsCard title="LANGUAGES" skills={languages} />
-            <SkillsCard title="FRAMEWORKS" skills={frameworks} />
+            <SkillsCard title="TECHNOLOGIES" skills={frameworks} />
             <SkillsCard title="DATABASES" skills={databases} />
-            <SkillsCard title="TOOLS & INFRASTRUCTURE" skills={tools} />
+            <SkillsCard title="INFRASTRUCTURE" skills={tools} />
           </div>
         </section>
       </div>
