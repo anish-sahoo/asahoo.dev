@@ -78,7 +78,7 @@ const Resume = () => {
         {/* Experience Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-6 font-mono">
-            Work Experience
+            Relevant Experience
           </h2>
           <div className="space-y-6">
             {jobs.map((job, index) => (

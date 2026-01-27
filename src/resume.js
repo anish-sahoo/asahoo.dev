@@ -230,11 +230,50 @@ export const classes = [
 
 export const jobs = [
   {
+    company: "MasterControl",
+    date: "January 2026 - Present",
+    positions: [
+      {
+        title: "Software Engineering Co-op, AI/ML",
+        points: [
+          "Working on ML Platform Services, AI/ML Products, and Agentic AI infrastructure",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Generate Product Development, A Sherman Center Program",
+    date: "January 2026 - Present",
+    positions: [
+      {
+        title: "Software Engineer",
+        points: [
+          "Build toggo, a (iOS + Golang) application to make group trip planning more effective",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Massachusetts National Guard + Northeastern University",
+    date: "September 2025 - December 2025",
+    positions: [
+      {
+        title: "Lead Software Engineer",
+        points: [
+          "Led backend engineering, system design, and infrastructure for a team of 8 software engineers in developing a communications and mentor matching platform supporting 8,000+ troop members daily",
+          "Architected RBAC policy engine with Redis caching, reducing auth latency by 70\% during peak alerts",
+          "Built scalable file ingestion and delivery system using AWS S3 presigned URLs and Web Push notifications",
+          "Architected hybrid search-based mentorship recommendation algorithm using AWS Bedrock embeddings and pgvector"
+        ],
+      },
+    ],
+  },
+  {
     company: "Priceline",
     date: "January 2025 - June 2025",
     positions: [
       {
-        title: "Backend Software Engineering Co-op",
+        title: "Software Engineering Co-op, Backend",
         points: [
           "Delivered personalization and recommendation features by building scalable REST and gRPC services in Spring, working cross-functionally with product, data, and 4+ engineering teams in an Agile environment",
           "Led integration and A/B testing of Google Vertex AI Search for the Penny chatbot's search service in coordination with Google engineers, improving result relevance by around 25% across two evaluation metrics",

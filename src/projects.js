@@ -1,5 +1,13 @@
 export var projects = [
   {
+    name: "GuardConnect",
+    description:
+      "Communication & Mentor Matching System for the Massachusetts National Guard, made in partnership with Northeastern University.",
+    badges: ["TypeScript", "tRPC", "PostgreSQL", "AWS", "NextJS"],
+    link: "https://github.com/KhourySpecialProjects/GuardConnect",
+    link2: "https://commng.nunext.dev"
+  },
+  {
     name: "image-storage-api",
     description:
       "Small scale file hosting server (not quite an FTP server) to be used to host assets for this website.",
@@ -9,7 +17,7 @@ export var projects = [
   {
     name: "Anime Discovery Engine",
     description:
-      "Trying to build the most overkill anime recommendation/personalization system that exists. Microservice based architecture with graphql and grpc services. This is a work in progress (I'm done with the backend, working on ui).",
+      "Trying to build the most overkill anime recommendation/personalization system that exists. (Work in Progress, targeting a release in Q1 2026)",
     badges: [
       "Python",
       "Java",
@@ -19,7 +27,7 @@ export var projects = [
       "PostgreSQL",
       "NextJS"
     ],
-    // link2: "https://github.com/anish-sahoo/AnimeVisualizer",
+    link: "https://github.com/anish-sahoo/AnimeDiscovery",
   },
   {
     name: "ResumeTex",
@@ -56,7 +64,7 @@ export var projects = [
     link: "https://github.com/trentwiles/SitDownAndStudy",
     // link2: "https://sitdownand.study",
     hackathon: {
-      name: "YHack 2024",
+      name: "YHack 2024 - Best Domain Name Winner",
       link: "https://devpost.com/software/sit-down-and-study",
     },
   },
@@ -73,7 +81,6 @@ export var projects = [
       "A map of the top 5000 anime scraped from MyAnimeList created using word embeddings, t-SNE dimensionality reduction, and rendered in webgl using PixiJS.",
     badges: ["Python", "JavaScript", "PixiJS", "TensorFlow"],
     link: "https://github.com/anish-sahoo/AnimeVisualizer",
-    link2: "https://anime.asahoo.dev",
   },
   {
     name: "easyclassplanner.com",
